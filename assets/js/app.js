@@ -37,6 +37,7 @@ function filterRangeInPlace(arr, a, b) {
         }
     }
 }
+
 arr = [5, 3, 8, 1];
 
 
@@ -77,10 +78,6 @@ var vovochka = { name: "Vovan", age: 6 };
 
 arr = [ vasya, masha, vovochka ];
 arr.sort(sortByAge);
-
-for (var i = 0; i < arr.length; i++) {
-    alert(arr[i].name);
-}
 
 
 // Вывод односвязного списка
@@ -162,7 +159,7 @@ function noAnagrams(arr) {
 
 arr = ["воз", "киборг", "корсет", "ЗОВ", "гробик", "костер", "сектор"];
 
-// Оставляем толоько уникальные элементы массива:
+// Оставляем только уникальные элементы массива:
 
 function unique(arr) {
 
@@ -178,4 +175,3 @@ var strings = ["кришна", "кришна", "харе", "харе",
     "харе", "харе", "кришна", "кришна", "8-()"
 ];
 
-alert( unique(strings) );
