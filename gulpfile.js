@@ -20,16 +20,16 @@ gulp.task("concatScripts", function() {
 		'assets/js/functions.js'
 	])
 		.pipe(maps.init())
-		.pipe(concat('main.js'))
+		.pipe(concat('vendor.js'))
 		.pipe(maps.write('./'))
 		.pipe(gulp.dest('assets/js'))
 		.pipe(browserSync.stream());
 });
 
 gulp.task("minifyScripts", ["concatScripts"], function() {
-  return gulp.src("assets/js/main.js")
+  return gulp.src("assets/js/vendor.js")
 	  .pipe(uglify())
-	  .pipe(rename('main.min.js'))
+	  .pipe(rename('vendor.min.js'))
 	  .pipe(gulp.dest('dist/assets/js'));
 });
 
@@ -56,13 +56,13 @@ gulp.task('watchFiles', function() {
 })
 
 gulp.task('clean', function() {
-  del(['dist', 'assets/css/main.css*', 'assets/js/main*.js*']);
+  del(['dist', 'assets/css/main.css*', 'assets/js/vendor*.js*']);
 });
 
 gulp.task('renameSources', function() {
   return gulp.src(['*.html', '**/*.php', '!dist', '!dist/**'])
     .pipe(htmlreplace({
-      'js': 'assets/js/main.min.js',
+      'js': 'assets/js/vendor.min.js',
       'css': 'assets/css/main.min.css'
     }))
     .pipe(gulp.dest('dist/'));
@@ -77,13 +77,13 @@ gulp.task("build", ['minifyScripts', 'minifyCss'], function() {
 	], { base: './'})
 		.pipe(gulp.dest('dist'));
 });
-
-gulp.task('serve', ['watchFiles'], function(){
+// MAIN TASK!!!!
+gulp.task('serve', ['build','watchFiles'], function(){
   browserSync.init({
   	server: "./"
   });
 
-  gulp.watch("assets/css/**/*.scss", ['watchFiles']);
+  gulp.watch("assets/css/**/*.css", ['watchFiles']);
   gulp.watch(['*.html', '*.php']).on('change', browserSync.reload);
 });
 
