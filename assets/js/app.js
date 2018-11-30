@@ -50,7 +50,7 @@ function compareNumericReverse(a, b) {
 arr = [ 1, 2, 15 ];
 arr.sort(compareNumericReverse);
 
-
+//
 // Копируем массив и сортируем
 
 var arrSorted = arr.slice(0).sort(); // Сортируем его по дефолту
@@ -159,6 +159,7 @@ function noAnagrams(arr) {
 
 arr = ["воз", "киборг", "корсет", "ЗОВ", "гробик", "костер", "сектор"];
 
+
 // Оставляем только уникальные элементы массива:
 
 function unique(arr) {
@@ -172,6 +173,154 @@ function unique(arr) {
     return Object.keys(obj);
 }
 var strings = ["кришна", "кришна", "харе", "харе",
-    "харе", "харе", "кришна", "кришна", "8-()"
-];
+    "харе", "харе", "кришна", "кришна", "8-()"];
+
+
+// Новый массив с помощью map
+
+arr = ["Есть", "жизнь", "на", "Марсе"];
+var arrLength = arr.map(function(arr) {
+    return arr.length;
+});
+
+
+// Новый массив, каждый элемент которого -
+// сумма элементов до него, включая его
+
+arr = [1, 2, 3, 4, 5];
+var result = arr.reduce(function(sum, current) {
+    return sum + current;
+}, 0);
+
+
+// Удаляем из массива элементы, не входящие в [a, b] с filter
+arr = [5, 3, 8, 1];
+a = 4;
+b = 9;
+result = arr.filter(function(number) {
+    return (number > a && number < b);
+});
+
+// Удаляем из массива элементы, не входящие в [a, b], без методов
+arr = [1,3,5,9];
+
+function deleteElem(arr, a, b) {
+    var newArr = [];
+    for (var i = 0; i < arr.length; i++) {
+        if ((arr[i] > a) && (arr[i] < b)) {
+                newArr[newArr.length] = arr[i];
+        }
+    }
+    return newArr;
+}
+
+
+// Удаляем из массива элементы по индексу
+arr = [1,2,3,4,5,6];
+function deleteElemByIndex(arr, index) {
+    for (var i = 0; i < arr.length; i++) {
+        if ((i >= index) && (i <= arr.length - 1)) {
+            arr[i] = arr[i + 1];
+        }
+    }
+    delete arr[arr.length];
+    arr.length = arr.length - 1;
+    return arr;
+}
+
+
+// Проверка, отсутствует элемент или undefined
+
+function argExistence(x){
+    if (arguments.length)
+        return 1;
+    else return 0;
+}
+
+
+// Сумма аргументов функции
+function sumYourself() {
+    var argSum = 0;
+    for (var i = 0; i < arguments.length; i++) {
+        argSum += arguments[i];
+    }
+    return argSum;
+}
+
+
+// Создаём дату
+
+var randomDate = new Date(2012, 1, 22, 3, 12);
+
+// Выводим название дня недели вместо его номера
+
+function getWeekDay(date) {
+    var days = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
+    return days[date.getDay()];
+}
+
+
+// Выводим номер дня недели (1-7, начиная с пн)
+
+function getWeekDayNumber(date) {
+    var day = date.getDay();
+
+    if (day == 0) day = 7;
+    return day;
+}
+
+
+// Выводим номер дня недели (1-7, начиная с пн), метод 2
+
+function getWeekDayNumber2(date) {
+    var days = ['7', '1', '2', '3', '4', '5', '6'];
+    return days[date.getDay()];
+}
+
+
+// Выводим какой день был х дней назад
+
+function whatWasTheDay(date, days) {
+    var dateCopy = new Date(date);
+
+    dateCopy.setDate(date.getDate() - days);
+    return dateCopy.getDate();
+}
+
+var date = new Date;
+
+
+// Последний день месяца
+
+function lastDayOfMonth(year, month) {
+    var date = new Date(year, month + 1, 0);
+    return date.getDate();
+}
+alert(lastDayOfMonth(2018,12));
+
+
+// Время, прошедшее с начала дня
+function howMuchSecondPastToday() {
+    var currentTime = new Date(), dayStartTime = new Date(now.getFullYear(), now.getMonth(), now.getMinutes());
+    var diff = dayStartTime - currentTime;
+    return Math.floor(seconds / 1000);
+}
+alert(howMuchSecondPastToday());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
