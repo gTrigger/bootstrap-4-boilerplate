@@ -293,34 +293,175 @@ var date = new Date;
 // Последний день месяца
 
 function lastDayOfMonth(year, month) {
-    var date = new Date(year, month + 1, 0);
+    date = new Date(year, month + 1, 0);
     return date.getDate();
 }
-alert(lastDayOfMonth(2018,12));
 
 
 // Время, прошедшее с начала дня
 function howMuchSecondPastToday() {
-    var currentTime = new Date(), dayStartTime = new Date(now.getFullYear(), now.getMonth(), now.getMinutes());
-    var diff = dayStartTime - currentTime;
-    return Math.floor(seconds / 1000);
+    date = new Date();
+    return date.getHours() * 3600 + date.getMinutes() * 60 + date.getSeconds();
 }
-alert(howMuchSecondPastToday());
 
 
+// Сколько секунд до завтра
+function howMuchSecondsToTomorrow() {
+    var now = new Date();
+    var tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate()+1);
+    date = tomorrow - now;
+    return (now/1000);
+}
 
 
+// Текущая дата в формате дд.мм.гг
+function currentDate() {
+    var dd = date.getDate();
+    if (dd < 10) dd = '0' + dd;
+    var mm = date.getMonth();
+    if (mm < 10) mm = '0' + mm;
+    var yy = date.getFullYear();
+    if (yy < 10) yy = '0' + yy;
+    return dd + '.' + mm + '.' + yy;
+}
 
 
+// Форматирование даты в зависимости от "прошедшего" времени
+function formatDate(date) {
+    var diff = new Date() - date;
+    if (diff < 1000) {
+        return "right now";
+    }
+    var sec = Math.floor(diff / 1000);
+    if (sec < 60) {
+        return sec + " sec. ago";
+    }
+    var min = Math.floor(diff / (1000 * 60));
+    if (min < 60) {
+        return min + " min. ago";
+    }
+    var day = date;
+    day = ["0" + day.getDate(),
+        "0" + (day.getMonth()+1),
+        "" + day.getFullYear(),
+        "0" + day.getHours(),
+        "0" + day.getMinutes() ];
+    for (var i = 0; i < day.length; i++) {
+        day[i] = day[i].slice(-2);
+    }
+    return day.slice(0, 3).join("-") + " " + day.slice(3).join(":");
+}
 
 
+// Сумма через замыкание
+function sum(a) {
+    return function (b) {
+        return a + b;
+    }
+}
 
 
+// Строковый буфер
+function makeBuffer() {
+    var text = '';
+    function buffer(value) {
+        if (arguments.length == 0) {
+            return text;
+        }
+        text += value;
+    };
+    buffer.clear = function() {
+        text = '';
+    };
+    return buffer;
+};
+var buffer = makeBuffer();
+
+buffer('Smack ');
+buffer('my ');
+buffer('bitch ');
+buffer('up!');
+
+buffer.clear();
 
 
+//Сортировка по свойству
+function byField(field) {
+    return function(a, b) {
+        return a[field] > b[field] ? 1: -1;
+    }
+}
+
+var users = [{
+    name: "Вася",
+    surname: 'Иванов',
+    age: 20
+}, {
+    name: "Петя",
+    surname: 'Чапаев',
+    age: 25
+}, {
+    name: "Маша",
+    surname: 'Медведева',
+    age: 18
+}];
+
+/*users.sort(byField('name'));
+users.forEach(function(user) { alert( user.name );});*/
 
 
+//Фильтр
+var arr = [1, 2, 3, 4, 5, 6, 7];
+function filter(arr, func) {
+    var result = [];
+    for (var i = 0; i < arr.length; i++) {
+        var val = arr[i];
+        if ( func(val) ) {
+            result.push(val);
+        }
+    }
+    return result;
+}
+var arr = [1, 2, 3, 4, 5, 6, 7];
+
+/*alert(filter(arr, function(a) {
+    return a % 2 == 0;
+} ));*/
+
+function inBetween(a, b) {
+    return function(x) {
+        return x >= a && x <= b;
+    };
+}
+
+function inArray(arr) {
+    return function(x) {
+        return arr.indexOf(x) != -1;
+    };
+}
+
+/*alert(filter (arr, inArray([1,3,5,7])) );
+alert(filter (arr, inBetween(3, 6)));*/
 
 
+// Массив функций
+function makeArmy() {
 
+    var shooters = [];
+
+    for (var i = 0; i < 10; i++) {
+        var shooter = function() {
+            return function() {
+                alert(i);
+            };
+        }(i);
+    shooters.push(shooter);
+    }
+    return shooters;
+}
+var army = makeArmy();
+
+/*
+army[0]();
+army[5]();*/
 
