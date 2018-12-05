@@ -465,3 +465,40 @@ var army = makeArmy();
 army[0]();
 army[5]();*/
 
+
+// Вывести <head>, дочерний элемент <body>,
+// дочерний дочернего
+
+/*alert(document.documentElement.firstChild);
+alert(document.body.children[2]);
+alert(document.body.children[2].children[2]);*/
+
+
+// Существуют ли дети?
+/*
+if (document.body.firstChild == null) {
+    alert('No elements here')
+}
+alert('Here are some elements');
+*/
+
+
+// Выделить диагональ в таблице
+/*
+var table = document.body.children[0];
+
+for (var i = 0; i < table.rows.length; i++) {
+    table.rows[i].cells[i].style.backgroundColor = 'red';
+}
+*/
+
+
+// Текст каждого <li> и кол-во вложенных <li>
+/*
+list = document.getElementsByTagName("li");
+alert(list.length);
+for (var i = 0; i < list.length; i++) {
+    alert(list[i].firstChild.data +
+          " count: " +
+          list[i].getElementsByTagName("li").length);
+};*/
