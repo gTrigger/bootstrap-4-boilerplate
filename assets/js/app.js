@@ -502,3 +502,74 @@ for (var i = 0; i < list.length; i++) {
           " count: " +
           list[i].getElementsByTagName("li").length);
 };*/
+
+
+// Полифилл для matches
+(function() {
+    if (!Element.prototype.matches) {
+        Element.prototype.matches =
+            Element.prototype.matchesSelector ||
+            Element.prototype.webkitMatchesSelector ||
+            Element.prototype.mozMatchesSelector ||
+            Element.prototype.msMatchesSelector;
+    }
+})();
+
+
+//Полифилл для closest
+(function() {
+    if (!Element.prototype.closest) {
+        Element.prototype.closest = function (css) {
+            var node = this;
+            while (node) {
+                if (node.matches(css)) return node;
+                else node = node.parentElement;
+            }
+            return null;
+        }
+    }
+})();
+
+
+//Полифилл для textContent
+(function() {
+    if (!Element.prototype.textContent === undefined) {
+        Object.defineProperty(Element.prototype, 'innerText', {
+            get: function() {
+                return this.innerText();
+            },
+            set: function(value) {
+                this.innerText = value;
+            }
+        });
+    }
+})();
+
+
+// Получаем пользовательский атрибут
+/*
+constDiv = document.getElementsById("widget");
+constAttr = elem.getAttribute("data-widget-name");
+alert(constAttr);*/
+
+
+// Добавить класс ссылкам
+var links = document.getElementsByTagName('a');
+for (var i = 0; i < links.length; i++) {
+    if (link[i].getAttribute('href') == null ||
+        link[i].getAttribute('href').indexOf('://') == -1 ||
+        link[i].getAttribute('href').indexOf('http://internal.com/') != -1) {
+            continue;
+    }
+    link[i].classList.add('external');
+}
+
+//OR
+var css = 'a[href*="://"]:not([href^="http://internal.com"])';
+var links = document.querySelectorAll(css);
+for (var i = 0; i < links.length; i++) {
+    links[i].classList.add('external');
+}
+
+
+//
