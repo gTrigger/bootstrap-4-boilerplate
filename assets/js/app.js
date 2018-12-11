@@ -572,4 +572,436 @@ for (var i = 0; i < links.length; i++) {
 }
 
 
-//
+// Полифилл для удаления элементов
+if (!Element.prototype.remove) {
+    Element.prototype.remove = function remove() {
+        if (Element.prototype.parentNode) {
+            Element.prototype.parentNode.removeChild(this);
+        }
+    }
+}
+document.body.children[0].remove();
+
+
+// Добавляем элемент после
+function insertAfter(elem, refElem) {
+    return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
+}
+
+
+// Удаляем всех потомков
+function removeChild(elem) {
+    while (elem.lastChild) {
+        elem.removeChild(elem.lastChild);
+    }
+}
+
+//OR
+function removeChild(elem) {
+    elem.innerHTML = '';
+}
+
+// Создаем список из ответов пользователя
+var ul = document.createElement('ul');
+document.body.appendChild(ul);
+
+while (true) {
+    data = prompt('Insert some information to add it');
+    if (!data) {
+        break;
+    }
+    else {
+        var li = document.createElement('li');
+        li.appendChild(document.createTextNode(data));
+        ul.appendChild(li);
+    }
+}
+
+
+// Создаем список из объекта (сама сделать не смогла)
+var data = {
+    "Fish": {
+        "Salmon": {},
+        "Tuna": {}
+    },
+
+    "Tree": {
+        "Branch": {
+            "Flower": {},
+            "Leaves": {}
+        }
+    }
+};
+
+function createTreeFromObject(container, obj) {
+    container.appendChild(createTreeDom(obj));
+}
+function createTreeDom(obj) {
+    if (isObjectEmpty(obj)) {
+        return;
+    }
+    var ul = document.createElement('ul');
+
+    for (var key in obj) {
+        var li = document.createElement('li');
+        li.innerHTML = key;
+
+        var childrenUl = createTreeDom(obj[key]);
+        if (childrenUl) {
+            li.appendChild(childrenUl);
+        }
+        ul.appendChild(li);
+    }
+    return ul;
+}
+
+function isObjectEmpty(obj) {
+    for (var key in obj) {
+        return false;
+    }
+    return true;
+}
+
+var container = document.getElementById('container');
+createTreeFromObject(container, data);
+
+
+// Добавить к <li> количество вложенных в него элементов
+var liList = document.getElementsByTagName('li');
+for (i = 0; i < liList.length; i++) {
+    var childCount = liList[i].getElementsByTagName('li').length;
+    if (childCount > 0) {
+        liList[i].firstChild.data += " [" + childCount + "]";
+    }
+}
+
+
+// Примитивный живой календарь
+function calendarCreating(id, year, month) {
+    var elem = document.getElementById(id),
+        mon = month - 1,
+        d = new Date(year, mon),
+        table = '<table><tr>' +
+            '<th>Mon</th>' +
+            '<th>Tue</th>' +
+            '<th>Wed</th>' +
+            '<th>Thu</th>' +
+            '<th>Fri</th>' +
+            '<th>Sat</th>' +
+            '<th>Sun</th>' +
+            '</tr><tr>';
+    for (var i = 0; i < getDay(d); i++) {
+        table += '<td></td>';
+    }
+    while (d.getMonth() == mon) {
+        table += '<td>' + d.getDate() + '</td>';
+        if (getDay(d) % 7 == 6) {
+            table += '</tr><tr>';
+        }
+        d.setDate(d.getDate() + 1);
+    }
+    if (getDay(d) != 0) {
+        for (var i = getDay(d); i < 7; i++) {
+            table += '<td></td>';
+        }
+    }
+    table += '</tr></table>';
+    elem.innerHTML = table;
+}
+function getDay(date) {
+    var day = date.getDay();
+    if (day == 0) day == 7;
+    return day - 1;
+}
+/*
+createCalendar("calendar", 2018, 12);*/
+
+
+// Маленькие чааасики смеются тик-тааак
+
+var currentTime;
+
+function updateTime() {
+    var clock = document.getElementById('clock'),
+        date = new Date(),
+        hours = date.getHours();
+        minutes = date.getMinutes();
+        seconds = date.getSeconds();
+
+        if (hours < 10) hours = '0' + hours;
+        clock.children[0].innerHTML = hours;
+
+        if (minutes < 10) minutes = '0' + minutes;
+        clock.children[1].innerHTML = minutes;
+
+        if (seconds < 10) seconds = '0' + seconds;
+        clock.children[2].innerHTML = seconds;
+}
+function clockStart() {
+    setInterval(update, 1000);
+    update();
+}
+/*
+clockStart();*/
+
+
+// Добавляем элементы в список с insertAdjacent
+document.body.children[0].insertAdjacent("beforeEnd", "<li>3</li><li>4</li><li>5</li>");
+
+
+// Кнопка только на js
+var a = document.createElement('a');
+a.className = 'button';
+a.appendChild(document.createTextNode('Press Me!'));
+a.href = '/';
+var s = a.style
+        s.MozBorderRadius = s.WebkitBorderRadius = s.BorderRadius = '8px';
+        s.border = '2px groove green';
+        s.display = 'block';
+        s.height = s.LineHeight = '30px';
+        s.width = '100px';
+        s.textDecoration = 'none';
+        s.textAlign = 'center';
+        s.color = 'red';
+        s.fontWeight = 'bold';
+var div = document.body.children[0];
+div.appendChild(a);
+
+
+// Уведомление, пропадающее через 1.5 секунды
+function showNotification(options) {
+    var notification = document.createElement('div');
+    document.body.appendChild(notification);
+    notification.className = 'notification';
+    if (options.className) {
+        notification.classList.add(options.className);
+    };
+    if (options.cssText) {
+        notification.style.cssText = options.cssText;
+    };
+    notification.style.top = (options.top || 0) + 'px';
+    notification.style.right = (options.right || 0) + 'px';
+    notification.innerHTML = options.html;
+
+    setTimeout(function () {
+        document.body.removeChild(notification);
+    }, 1500);
+}
+
+
+// Найти высоту прокрутки снизу
+//alert(elem.scrollHeight - elem.scrollTop - elem.clientHeight);
+
+
+// Узнать ширину полосы прокрутки
+//alert(elem.offsetWidth - elem.clientWidth);
+
+
+// Подмена div
+var div = document.getElementById('moving-div'),
+    anotherDiv = document.createElement('div');
+anotherDiv.style.Height = div.offsetHeight + 'px';
+
+
+// Хочу отметить, что это не я ничего не делаю,
+// это некоторые задачи необходимо решать там же.
+
+// 1 Размещение заметки рядом с элементом
+// 2 Position: absolute
+// 3 Размещение заметки внутри элемента
+function positionAt(anch, pos, elem) {
+
+    var anchCoords = anchor.getBoundingClientRect();
+
+    switch(position) {
+        case "bottom":
+            elem.style.left = anchCoords.left + 'px';
+            elem.style.top = anchCoords.bottom + 'px';
+            break;
+        case "top":
+            elem.style.left = anchCoords.left + 'px';
+            elem.style.top = anchCoords.top - elem.offsetHeight + 'px';
+            break;
+        case "right":
+            elem.style.left = anchCoords.right + "px";
+            elem.style.top = anchCoords.top + "px";
+            break;
+    }
+}
+function showNote(anch, pos, html) {
+    var note = document.createElement('div');
+    note.className = "note";
+    note.innerHTML = html;
+    document.body.appendChild(note);
+
+    positionAt(anch, pos, note);
+}
+
+
+// Текущая прокрутка и область видимости для документа
+var scrollHeight = Math.max(
+    document.body.scrollHeight, document.documentElement.scrollHeight,
+    document.body.offsetHeight, document.documentElement.offsetHeight,
+    document.body.clientHeight, document.documentElement.clientHeight
+);
+function getDocumentScroll() {
+    return {
+        top: pageYOffset,
+        bottom: pageYOffset + document.documentElement.clientHeight,
+        height: scrollHeight
+    };
+}
+
+
+// Прячем элемент по клику на кнопку
+
+document.getElementById('hider').onclick = function() {
+    document.getElementById('text').style.display = 'none';
+};
+
+// Прячем саму кнопку по клику на неё
+
+document.getElementById('hider').onclick = function () {
+    document.getElementById('hider').style.display = 'none';
+};
+//OR
+document.getElementById('hider').onclick = function () {
+    this.style.display = 'none';
+};
+
+
+// Двигаем мячи по клику мыши.
+var field = document.getElementById("field");
+var ball = document.getElementById("ball");
+
+field.onclick = function(event) {
+
+    var fieldCoords = this.getBoundingClientRect();
+
+    var ballCoords = {
+        top: event.clientY - (fieldCoords.top + field.clientTop) - ball.clientHeight / 2,
+        left: event.clientX - (fieldCoords.left + field.clientLeft) - ball.clientWidth / 2
+    };
+
+    if (ballCoords.left < 0) ballCoords.left = 0;
+
+    if (ballCoords.left + ball.clientWidth > field.clientWidth) {
+        ballCoords.left = field.clientWidth - ball.clientWidth
+    };
+
+    if (ballCoords.top < 0) ballCoords.top = 0
+
+    if (ballCoords.top + ball.clientHeight > field.clientHeight) {
+        ballCoords.top = field.clientHeight - ball.clientHeight;
+    };
+
+    ball.style.left = ballCoords.left + 'px';
+    ball.style.top = ballCoords.top + 'px';
+};
+
+
+// Сортируем таблицу, нажимая на th
+var thead = document.getElementsByTagName("thead")[0];
+var tbody = document.getElementsByTagName("tbody")[0];
+var tr = tbody.getElementsByTagName("tr");
+var th = thead.getElementsByTagName("th");
+// Добавляем к каждому <th> атрибут "data-num"
+for (var i = 0; i < th.length; i++) {
+    th[i].setAttribute("data-num", i)
+}
+// Функция сортировки
+thead.addEventListener("click", function(event) {
+
+    var target = event.target;
+    // если клик не на <th>, прерываем функцию
+    if(target.tagName != "TH") {
+        return;
+    }
+    // если клик на <th>, сортируем
+    else {
+        // записываем в переменную элементы с атрибутами "data-num"
+        var thNum = target.getAttribute("data-num");
+        // создаем массив из элементов <tr>
+        var arr = [].slice.apply(tr);
+        // сортируем массив
+        arr.sort(function(a, b) {
+            var a = a.children[thNum].innerHTML;
+            var b = b.children[thNum].innerHTML;
+            // если сортируемые элементы численные - возвращаем их разницу
+            if(+a) return a - b;
+            // если сортируемые элементы строчные - сравниваем побуквенно
+            if(a > b) return 1;
+            return -1;
+        });
+        arr.forEach(function(x) {
+            tbody.appendChild(x);
+        });
+    }
+});
+
+
+// Всплывающие подсказки по наведению мыши (не сама)
+var showingTooltip;
+
+document.addEventListener('mouseover', function(event) {
+
+    var target = event.target;
+
+    var tooltip = target.getAttribute('data-tooltip');
+
+    // если по наведению существует элемент с таким атрибутом:
+    if (tooltip) {
+
+        // добавляем новый div
+        var tooltipElem = document.createElement('div');
+        tooltipElem.className = 'tooltip';
+        tooltipElem.innerHTML = tooltip;
+        document.body.appendChild(tooltipElem);
+
+        // определяем его местоположение
+        var coords = target.getBoundingClientRect();
+
+        // если не влезает слева, двигаем
+        var left = coords.left + (target.offsetWidth - tooltipElem.offsetWidth) / 2;
+        if (left < 0) {
+            left = 0;
+        }
+        // если не влезает сверху, двигаем
+        var top = coords.top - tooltipElem.offsetHeight - 5;
+        if (top < 0) {
+            top = coords.top + target.offsetHeight + 5;
+        }
+
+        tooltipElem.style.left = left + 'px';
+        tooltipElem.style.top = top + 'px';
+
+        showingTooltip = tooltipElem;
+    }
+});
+
+document.addEventListener('mouseout', function(event) {
+    // если подсказка показана, убираем.
+    if (showingTooltip) {
+        document.body.removeChild(showingTooltip);
+        showingTooltip.remove();
+    }
+});
+
+
+// Спрашиваем, точно ли пользователь хочет перейти по ссылке
+document.getElementById('contents').onclick = function(event) {
+
+    function pleaseStay(href) {
+        var isLeaving = confirm('Do you really-really want to leave me alone and go to ' + href + '?');
+        if (!isLeaving) return false;
+    }
+
+    var target = event.target;
+
+    while (target != this) {
+        if (target.nodeName == 'A') {
+            return pleaseStay(target.getAttribute('href'));
+        }
+        target = target.parentNode;
+    }
+};
