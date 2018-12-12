@@ -67,6 +67,38 @@ h1 {
   width: 100%;
   height: auto; }
 
+/*Стили для alertbox*/
+.container-alert-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  top: 30%;
+  width: 30%;
+  z-index: 999999;
+  position: absolute;
+  margin-left: 35%;
+  overflow: auto;
+  background: linear-gradient(to top, #127361 0%, #22084b 100%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 10px 20px rgba(0, 0, 0, 0.3); }
+
+.alert-box {
+  padding: 20px; }
+
+.alert-box:nth-child(1) {
+  text-align: center; }
+
+.alert-box:nth-child(2) {
+  text-align: justify; }
+
+.remove-button {
+  margin-top: 10px;
+  padding: 15px;
+  color: black;
+  border: 2px solid black;
+  outline: none;
+  cursor: pointer;
+  background: white; }
+
 /*Стили для descr*/
 .container-descr {
   margin: 40px 0 0 0;
@@ -80,7 +112,7 @@ h1 {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  padding: 20px; }
+  padding: 30px; }
 
 .profilepic {
   background: url("https://media.creativemornings.com/uploads/user/avatar/89900/Profile_picture_square.jpg") no-repeat;

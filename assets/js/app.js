@@ -1005,3 +1005,78 @@ document.getElementById('contents').onclick = function(event) {
         target = target.parentNode;
     }
 };
+
+
+// Галерея, при клике подсказка с названием и изображение увеличивается
+
+document.querySelector('#thumbs').onclick = function(event) {
+    document.querySelector('#largeImg').src = event.target.closest('A').href;
+    document.querySelector('#largeImg').alt = event.target.closest('A').title;
+    return false;
+};
+
+
+// Список, по click выделение и сброс,
+// по ctrl+click выделение нескольких,
+// по shift+click выделение диапазона (сделала всё сама, кроме диапазона)
+
+var ul = document.querySelector('ul');
+var lastClickedLi = null;
+// Отслеживаем только по списку
+list.onclick = function(e) {
+    var target = event.target;
+    // Если клик не по li, прерываем
+    if (target.tagName != "LI") return;
+
+    if (e.ctrlKey || e.metaKey) {
+        toggleSelect(target);
+    }
+    else if (e.shiftKey) {
+        multiSelect(target);
+    }
+    else {
+        singleSelect(target);
+    }
+    lastClickedLi = target;
+};
+
+// Чтобы текст не выделялся
+ul.onmousedown = function() {
+    return false;
+};
+// Тут легко, переключаем класс по клику.
+function toggleSelect(li) {
+    li.classList.toggle('selected');
+}
+// Вообще ничего не понимаю
+function multiSelect(target) {
+
+    var start = lastClickedLi || ul.children[0];
+
+    var isLastClickedBefore = startElem.compareDocumentPosition(target) & 4;
+
+    if (isLastClickedBefore) {
+        for (var elem = start; elem != target; elem = elem.nextElementSibling) {
+            elem.classList.add('selected');
+        }
+    } else {
+        for (elem = start; elem != target; elem = elem.previousElementSibling) {
+            elem.classList.add('selected');
+        }
+    }
+    elem.classList.add('selected');
+}
+// Одиночный клик
+function singleSelect(li) {
+    resetSelect();
+    li.classList.add('selected');
+}
+// Сброс предыдущего выделения
+function resetSelect() {
+    for (var i = 0; i < ul.children.length; i++) {
+        ul.children[i].classList.remove('selected');
+    }
+}
+
+
+// 

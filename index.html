@@ -13,24 +13,37 @@
              alt="Logo" class="logo">
         <ul class="menu">
             <li class="menu-btn">
-                <a href="index.html"><i class="fa fa-home"> </i><span class="menu-item-label">&nbsp;HOME</span></a>
+                <a href="index.html"><div class="fa fa-home menu-item-label">&nbsp;HOME</div></a>
             </li>
             <li class="menu-btn">
-                <a href="index.html"><i class="fa fa-user"> </i><span class="menu-item-label">&nbsp;&nbsp;PROFILE</span></a>
+                <a href="index.html"><div class="fa fa-user menu-item-label">&nbsp;&nbsp;PROFILE</div></a>
             </li>
             <li class="menu-btn">
-                <a href="index.html"><i class="fa fa-tasks"> </i><span class="menu-item-label">&nbsp;ACTIONS</span></a>
+                <a href="index.html"><div class="fa fa-tasks menu-item-label">&nbsp;LAST ACTIONS</div></a>
             </li>
             <li class="menu-btn">
-                <a href="index.html"><i class="fa fa-commenting-o"> </i><span class="menu-item-label">&nbsp;SUPPORT</span></a>
+                <a href="index.html"><div class="fa fa-calendar menu-item-label">&nbsp;ACTIVITY</div></a>
             </li>
             <li class="menu-btn">
-                <a href="index.html"><i class="fa fa-cogs"> </i><span class="menu-item-label">&nbsp;SETTINGS</span></a>
+                <a href="index.html"><div class="fa fa-commenting-o menu-item-label">&nbsp;SUPPORT</div></a>
             </li>
             <li class="menu-btn">
-                <a href="index.html"><i class="fa fa-sign-out"> </i><span class="menu-item-label">&nbsp;SIGN OUT</span></a>
+                <a href="index.html"><div class="fa fa-cogs menu-item-label">&nbsp;SETTINGS</div></a>
+            </li>
+            <li class="menu-btn">
+                <a href="index.html"><div class="fa fa-sign-out menu-item-label">&nbsp;SIGN OUT</div></a>
             </li>
         </ul>
+    </div>
+
+    <div class="container-alert-box">
+        <div class="alert-box">
+            <h1>Welcome!</h1>
+            <p>I'm so happy to see you here! </p>
+            <p>You can turn on some widgets, just try to click on PROFILE, LAST ACTIONS and ACTIVITY buttons
+                from the side menu. Hope you'll like it! ( ͡° ͜ʖ ͡°)</p>
+            <button class="remove-button">Ok, thanks, close it now, please</button>
+        </div>
     </div>
 
     <div class="container-descr grid-item">
@@ -223,6 +236,15 @@
         </div>
     </div>
 </div>
+<script>
+    var container = document.getElementsByClassName('container-alert-box')[0];
+
+    container.onclick = function(event) {
+        if (event.target.classList.contains('remove-button')) {
+            event.target.parentNode.hidden = !event.target.parentNode.hidden;
+        }
+    }
+</script>
 </body>
 <script src="assets/js/vendor.js"></script>
 <script src="assets/js/array.methods.js"></script>
