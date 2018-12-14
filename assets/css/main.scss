@@ -16,7 +16,7 @@ nav, output, ruby, section, summary, time, mark, audio, video {
 }
 
 /*Общие стили*/
-body {
+body, button {
   color: #ffffff;
   font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
   font-size: 22px;
@@ -50,7 +50,15 @@ h1 {
   font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
   font-size: 24px;
 }
-
+.hidden {
+  visibility: hidden;
+}
+#welcome-cat {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 0;
+}
 /*Стили для menu*/
 .container-menu {
   grid-area: a;
@@ -61,19 +69,39 @@ h1 {
   width: 15%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 10px 20px rgba(0, 0, 0, 0.3);
 }
-
 .container-menu li {
   line-height: 1.5;
   list-style-type: none;
   padding-left: 20px;
 }
-
 .logo {
   -webkit-filter: invert(100%);
   filter: invert(100%);
   opacity: 10%;
   width: 100%;
   height: auto;
+}
+.container-widget {
+  padding: 20px;
+}
+.container-widget .fa {
+  padding: 10px;
+  font-size: 35px;
+}
+.container-widget button {
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  display: inline-block;
+  margin: 2px;
+  width: 70px;
+  height: 65px;
+  border: 2px solid white;
+  border-radius: 12px;
+  outline: 0;
+}
+.container-widget button:active {
+  color: #b8c0f1;
+  border: 2px solid #b8c0f1;
 }
 /*Стили для alertbox*/
 .container-alert-box {
@@ -92,24 +120,21 @@ h1 {
 .alert-box {
   padding: 20px;
 }
-.alert-box:nth-child(1){
-  text-align: center;
-}
-.alert-box:nth-child(2) {
+.alert-box .justify-text {
   text-align: justify;
 }
 .remove-button {
-  margin-top: 10px;
-  padding: 15px;
-  color: black;
-  border: 2px solid black;
-  outline: none;
-  cursor: pointer;
-  background: white;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 20px;
 }
 /*Стили для descr*/
 .container-descr {
-  margin: 40px 0 0 0;
+  margin: 35px 0 0 0;
   grid-area: b;
   background: rgba(0, 0, 0, 0.4);
   display: flex;
@@ -162,6 +187,16 @@ h1 {
   animation: pulse 0.6s linear;
 }
 
+.blur {
+  height: 100%;
+  filter: blur(8px);
+}
+
+.blur-out {
+  animation: blur-out 1s linear;
+  height: 100%;
+}
+
 @keyframes pulse {
   40% { transform: scale(1.2); }
   60% { transform: scale(0.8); }
@@ -169,10 +204,15 @@ h1 {
   100% { transform: scale(1.0); }
 }
 
+@keyframes blur-out {
+  0% { filter: blur(8px); }
+  100% { filter: blur(0px); }
+}
+
 /*Стили для graph*/
 .container-graph {
   padding: 20px;
-  margin: 40px 40px 0 0;
+  margin: 35px 40px 0 0;
   grid-area: c;
   background: rgba(0, 0, 0, 0.4);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 10px 20px rgba(0, 0, 0, 0.3);
@@ -189,7 +229,7 @@ h1 {
   grid-area: d;
   background: rgba(0, 0, 0, 0.4);
   padding: 20px;
-  margin: 0 40px 20px 0;
+  margin: 0 40px 30px 0;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -205,6 +245,8 @@ table {
 }
 th, td {
   border-top: 2px solid #d2def1;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 thead tr:first-child {
@@ -217,6 +259,74 @@ tbody tr {
 
 }
 
+.table-actions form {
+  display: inline-block;
+}
+.table-actions form input {
+  display: inline-block;
+  padding: 6px;
+  border: 2px solid white;
+  border-radius: 5px;
+  outline: 0;
+}
+.table-actions form input:focus {
+  border: 2px solid #b8c0f1;
+}
+.container-table-input {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin:auto;
+}
+.table-input-box {
+  background: linear-gradient(to top, #127361 0%, #22084b 100%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 10px 20px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  height: 550px;
+  padding: 20px;
+}
+.table-input-box input {
+  padding: 6px;
+  border: 2px solid white;
+  border-radius: 5px;
+  outline: 0;
+  width: 250px;
+  margin: 5px;
+}
+.table-input-box .comment{
+  height: 100px;
+}
+.table-input-box form input:focus {
+   border: 2px solid #b8c0f1;
+ }
+.table-actions .fa, .table-input-box .fa {
+  float: right;
+  font-size: 30px;
+}
+.table-actions button {
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  display: inline-block;
+  margin-left: 20px;
+  border: none;
+  outline: 0;
+}
+.table-input-box button {
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  margin: 20px;
+  padding: 0 55px 0 55px;
+  border: none;
+  outline: 0;
+}
+.table-actions button:active .table-input-box button:active {
+  color: #b8c0f1;
+}
 /*Стили для выбора дат*/
 .container-select {
   white-space: nowrap;

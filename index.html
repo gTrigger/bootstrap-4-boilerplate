@@ -5,248 +5,293 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
 <body>
+<!--Приветственное сообщение-->
+<div class="container-alert-box">
+    <div class="alert-box">
+        <h1>Welcome!</h1>
+        <p>I'm so happy to see you here! </p>
+        <p class="justify-text">You can turn on some widgets, just try to click on PROFILE, LAST ACTIONS and ACTIVITY buttons
+            from the side menu. Hope you'll like it! ( ͡° ͜ʖ ͡°)</p>
+        <button type="button" class="remove-button">Ok, thanks, close it now, please</button>
+    </div>
+</div>
 
-<div class="wrapper">
-
-    <div class="container-menu grid-item">
-        <img src="https://www.logogarden.com/wp-content/uploads/lg-logo-samples/Decor-Furniture-Logo-8.png"
-             alt="Logo" class="logo">
-        <ul class="menu">
-            <li class="menu-btn">
-                <a href="index.html"><div class="fa fa-home menu-item-label">&nbsp;HOME</div></a>
-            </li>
-            <li class="menu-btn">
-                <a href="index.html"><div class="fa fa-user menu-item-label">&nbsp;&nbsp;PROFILE</div></a>
-            </li>
-            <li class="menu-btn">
-                <a href="index.html"><div class="fa fa-tasks menu-item-label">&nbsp;LAST ACTIONS</div></a>
-            </li>
-            <li class="menu-btn">
-                <a href="index.html"><div class="fa fa-calendar menu-item-label">&nbsp;ACTIVITY</div></a>
-            </li>
-            <li class="menu-btn">
-                <a href="index.html"><div class="fa fa-commenting-o menu-item-label">&nbsp;SUPPORT</div></a>
-            </li>
-            <li class="menu-btn">
-                <a href="index.html"><div class="fa fa-cogs menu-item-label">&nbsp;SETTINGS</div></a>
-            </li>
-            <li class="menu-btn">
-                <a href="index.html"><div class="fa fa-sign-out menu-item-label">&nbsp;SIGN OUT</div></a>
-            </li>
-        </ul>
+<div id="overlay" class="blur">
+    <!--Котик в углу экрана-->
+    <div id="welcome-cat" class="not-hidden">
+        <img src="https://cdn170.picsart.com/upscale-246067230013212.png?r1024x1024" width="400px">
     </div>
 
-    <div class="container-alert-box">
-        <div class="alert-box">
-            <h1>Welcome!</h1>
-            <p>I'm so happy to see you here! </p>
-            <p>You can turn on some widgets, just try to click on PROFILE, LAST ACTIONS and ACTIVITY buttons
-                from the side menu. Hope you'll like it! ( ͡° ͜ʖ ͡°)</p>
-            <button class="remove-button">Ok, thanks, close it now, please</button>
+    <div class="wrapper">
+    <!--Контейнер для меню-->
+        <div class="container-menu grid-item" id="menu">
+            <img src="https://www.logogarden.com/wp-content/uploads/lg-logo-samples/Decor-Furniture-Logo-8.png"
+                 alt="Logo" class="logo">
+            <div class="container-widget">
+                <button class="fa fa-user show-widget show-profile-btn active-btn"></button>
+                <button class="fa fa-calendar menu-item-label show-widget show-graph-btn"></button>
+                <button class="fa fa-tasks show-widget show-table-btn"></button>
+            </div>
+            <ul class="menu">
+                <li class="menu-btn">
+                    <a href="index.html"><div class="fa fa-home menu-item-label">&nbsp;HOME</div></a>
+                <li class="menu-btn show-widget show-profile-btn">
+                    <a href="index.html"><div class="fa fa-user menu-item-label">&nbsp;&nbsp;PROFILE</div></a>
+                </li>
+                <li class="menu-btn show-widget show-table-btn">
+                    <a href="index.html"><div class="fa fa-tasks menu-item-label">&nbsp;LAST ACTIONS</div></a>
+                </li>
+                <li class="menu-btn show-widget show-graph-btn">
+                    <a href="index.html"><div class="fa fa-calendar menu-item-label">&nbsp;ACTIVITY</div></a>
+                </li>
+                <li class="menu-btn">
+                    <a href="index.html"><div class="fa fa-commenting-o menu-item-label">&nbsp;SUPPORT</div></a>
+                </li>
+                <li class="menu-btn">
+                    <a href="index.html"><div class="fa fa-cogs menu-item-label">&nbsp;SETTINGS</div></a>
+                </li>
+                <li class="menu-btn">
+                    <a href="index.html"><div class="fa fa-sign-out menu-item-label">&nbsp;SIGN OUT</div></a>
+                </li>
+            </ul>
         </div>
-    </div>
-
-    <div class="container-descr grid-item">
-        <div class="profile">
-            <div class="profilepic">
-            </div>
-            <div class="descr-bot">
-                <p class="name">Name Surname</p>
-                <p class="position">Designer</p>
-                <p class="lastseen">last seen: yesterday 19:22</p>
-            </div>
-        </div>
-        <div class="descr-right">
-            <div class="basic-info">
-                <h1>BASIC INFO</h1><br>
-                <p class="bday">Birth date: MM.DD.YY</p>
-                <p class="email"><i class="fa fa-envelope"> </i>&nbsp;mail@me.com</p>
-                <p class="phone"><i class="fa fa-phone"> </i>&nbsp;8-800-555-35-35</p>
-                <p class="site"><a href="https://google.com"><i class="fa fa-globe"> </i>&nbsp;https://find.me</a></p><br>
-            </div>
-            <div class="social">
-                <h1>SOCIAL</h1><br>
-                <div class="social-icons">
-                    <a href="http://facebook.com"><i class="fa fa-2x fa-facebook-square pulse"> </i></a>
-                    <a href="http://behance.com"><i class="fa fa-2x fa-behance-square pulse"> </i></a>
-                    <a href="http://github.com"><i class="fa fa-2x fa-github-square pulse"> </i></a>
-                    <a href="http://tumblr.com"><i class="fa fa-2x fa-tumblr-square pulse"> </i></a>
+    <!--Контейнер для общей информации-->
+        <div class="container-descr grid-item hidden">
+            <div class="profile">
+                <div class="profilepic">
                 </div>
-        </div>
-        </div>
-    </div>
-
-    <div class="container-graph grid-item">
-        <h1>LAST 30 DAYS ACTIVITY</h1>
-        <br>
-        <img src="assets/img/graph.png" class="graph">
-    </div>
-
-    <div class="container-table grid-item">
-        <h1>LAST ACTIONS</h1>
-
-        <div class="container-select">
-            <div class="select">
-                <p>From:</p>
-                <select title="from-month">
-                    <option>January</option>
-                    <option>February</option>
-                    <option>March</option>
-                    <option>April</option>
-                    <option>May</option>
-                    <option>June</option>
-                    <option>July</option>
-                    <option>August</option>
-                    <option>September</option>
-                    <option>October</option>
-                    <option>November</option>
-                    <option>December</option>
-                </select>
-                <input title="from-day" type="text" size="2" placeholder="DD">
-                <input title="from-year" type="text" size="4" placeholder="YYYY">
+                <div class="descr-bot">
+                    <p class="name">Name Surname</p>
+                    <p class="position">Designer</p>
+                    <p class="lastseen">last seen: yesterday 19:22</p>
+                </div>
             </div>
-
-            <div class="select">
-                <p>To:</p>
-                <select title="seconddate">
-                    <option>January</option>
-                    <option>February</option>
-                    <option>March</option>
-                    <option>April</option>
-                    <option>May</option>
-                    <option>June</option>
-                    <option>July</option>
-                    <option>August</option>
-                    <option>September</option>
-                    <option>October</option>
-                    <option>November</option>
-                    <option>December</option>
-                </select>
-                <input title="from-day" type="text" size="2" placeholder="DD">
-                <input title="from-year" type="text" size="4" placeholder="YYYY">
+            <div class="descr-right">
+                <div class="basic-info">
+                    <h1>BASIC INFO</h1><br>
+                    <p class="bday">Birth date: MM.DD.YY</p>
+                    <p class="email"><i class="fa fa-envelope"> </i>&nbsp;mail@me.com</p>
+                    <p class="phone"><i class="fa fa-phone"> </i>&nbsp;8-800-555-35-35</p>
+                    <p class="site"><a href="https://google.com"><i class="fa fa-globe"> </i>&nbsp;https://find.me</a></p><br>
+                </div>
+                <div class="social">
+                    <h1>SOCIAL</h1><br>
+                    <div class="social-icons">
+                        <a href="http://facebook.com"><i class="fa fa-2x fa-facebook-square pulse"> </i></a>
+                        <a href="http://behance.com"><i class="fa fa-2x fa-behance-square pulse"> </i></a>
+                        <a href="http://github.com"><i class="fa fa-2x fa-github-square pulse"> </i></a>
+                        <a href="http://tumblr.com"><i class="fa fa-2x fa-tumblr-square pulse"> </i></a>
+                    </div>
             </div>
+            </div>
+        </div>
+    <!--Контейнер для графика-->
+        <div class="container-graph grid-item hidden">
+            <h1>LAST 30 DAYS ACTIVITY</h1>
+            <br>
+            <img src="assets/img/graph.png" class="graph">
+        </div>
+    <!--Контейнер для бокса для заполнения таблицы-->
+    <div class="container-table-input hidden">
+        <form class="table-input-box">
+            <h1>NEW ACTION</h1>
+            <br>
+            <label>
+                Date
+                <br>
+                <input type="date" name="action-date">
+            </label>
+            <br>
+            <label>
+                Action name
+                <input type="text" name="action-name">
+            </label>
+            <br>
+            <label>
+                Project identifier
+                <input type="text" name="action-project-id">
+            </label>
+            <br>
+            <label>
+                Client name
+                <input type="text" name="action-client-name">
+            </label>
+            <br>
+            <label>
+                Comment
+                <br>
+                <input type="text" name="action-comment" class="comment">
+            </label>
+            <br>
+            <button class="fa fa-check"></button>
+            <button class="fa fa-close"></button>
+        </form>
+    </div>
+    <!--Контейнер для таблицы-->
+        <div class="container-table grid-item hidden">
+            <h1>LAST ACTIONS</h1>
 
-            <div class="searchbox">
+            <!--<div class="container-select">
+                <div class="select">
+                    <p>From:</p>
+                    <select title="from-month">
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                    </select>
+                    <input title="from-day" type="text" size="2" placeholder="DD">
+                    <input title="from-year" type="text" size="4" placeholder="YYYY">
+                </div>
+
+                <div class="select">
+                    <p>To:</p>
+                    <select title="seconddate">
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                    </select>
+                    <input title="from-day" type="text" size="2" placeholder="DD">
+                    <input title="from-year" type="text" size="4" placeholder="YYYY">
+                </div>&ndash;&gt;
+
+                <div class="searchbox">
+                    <form action="http://google.com/search" target="_blank">
+                        <i class="fa fa-search"> </i>
+                        <input type="search" placeholder="Search...">
+                    </form>
+                </div>
+            </div>-->
+            <div class="table-actions">
                 <form action="http://google.com/search" target="_blank">
-                    <i class="fa fa-search"> </i>
                     <input type="search" placeholder="Search...">
+                    <button class="fa fa-search"></button>
                 </form>
+                <button class="fa fa-trash-o trash-btn"></button>
+                <button class="fa fa-plus add-btn"></button>
             </div>
-        </div>
+            <br>
+            <table align="center">
+                <thead>
+                <tr class="row head">
+                    <th width="10%" valign="center" class="column1" data-column="column1">Date</th>
+                    <th width="30%" valign="center" class="column2" data-column="column2">Action</th>
+                    <th width="10%" valign="center" class="column3" data-column="column3">Project identifier</th>
+                    <th width="20%" valign="center" class="column4" data-column="column4">Client</th>
+                    <th width="30%" valign="center" class="column5" data-column="column5">Comment</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="row">
+                    <td class="column1" data-column="column1">MM.DD.YYYY</td>
+                    <td class="column2" data-column="column2">ActionName</td>
+                    <td class="column3" data-column="column3">Identifier</td>
+                    <td class="column4" data-column="column4">ClientName</td>
+                    <td class="column5" data-column="column5">Comment</td>
+                </tr>
 
-        <br>
+                <tr class="row">
+                    <td class="column1" data-column="column1">MM.DD.YYYY</td>
+                    <td class="column2" data-column="column2">ActionName</td>
+                    <td class="column3" data-column="column3">Identifier</td>
+                    <td class="column4" data-column="column4">ClientName</td>
+                    <td class="column5" data-column="column5">Comment</td>
+                </tr>
 
-        <table align="center">
-            <thead>
-            <tr class="row head">
-                <th width="10%" valign="center" class="column1" data-column="column1">Date</th>
-                <th width="30%" valign="center" class="column2" data-column="column2">Action</th>
-                <th width="10%" valign="center" class="column3" data-column="column3">Project identifier</th>
-                <th width="20%" valign="center" class="column4" data-column="column4">Client</th>
-                <th width="30%" valign="center" class="column5" data-column="column5">Comment</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="row">
-                <td class="column1" data-column="column1">MM.DD.YYYY</td>
-                <td class="column2" data-column="column2">ActionName</td>
-                <td class="column3" data-column="column3">Identifier</td>
-                <td class="column4" data-column="column4">ClientName</td>
-                <td class="column5" data-column="column5">Comment</td>
-            </tr>
+                <tr class="row">
+                    <td class="column1" data-column="column1">MM.DD.YYYY</td>
+                    <td class="column2" data-column="column2">ActionName</td>
+                    <td class="column3" data-column="column3">Identifier</td>
+                    <td class="column4" data-column="column4">ClientName</td>
+                    <td class="column5" data-column="column5">Comment</td>
+                </tr>
 
-            <tr class="row">
-                <td class="column1" data-column="column1">MM.DD.YYYY</td>
-                <td class="column2" data-column="column2">ActionName</td>
-                <td class="column3" data-column="column3">Identifier</td>
-                <td class="column4" data-column="column4">ClientName</td>
-                <td class="column5" data-column="column5">Comment</td>
-            </tr>
+                <tr class="row">
+                    <td class="column1" data-column="column1">MM.DD.YYYY</td>
+                    <td class="column2" data-column="column2">ActionName</td>
+                    <td class="column3" data-column="column3">Identifier</td>
+                    <td class="column4" data-column="column4">ClientName</td>
+                    <td class="column5" data-column="column5">Comment</td>
+                </tr>
 
-            <tr class="row">
-                <td class="column1" data-column="column1">MM.DD.YYYY</td>
-                <td class="column2" data-column="column2">ActionName</td>
-                <td class="column3" data-column="column3">Identifier</td>
-                <td class="column4" data-column="column4">ClientName</td>
-                <td class="column5" data-column="column5">Comment</td>
-            </tr>
+                <tr class="row">
+                    <td class="column1" data-column="column1">MM.DD.YYYY</td>
+                    <td class="column2" data-column="column2">ActionName</td>
+                    <td class="column3" data-column="column3">Identifier</td>
+                    <td class="column4" data-column="column4">ClientName</td>
+                    <td class="column5" data-column="column5">Comment</td>
+                </tr>
 
-            <tr class="row">
-                <td class="column1" data-column="column1">MM.DD.YYYY</td>
-                <td class="column2" data-column="column2">ActionName</td>
-                <td class="column3" data-column="column3">Identifier</td>
-                <td class="column4" data-column="column4">ClientName</td>
-                <td class="column5" data-column="column5">Comment</td>
-            </tr>
+                <tr class="row">
+                    <td class="column1" data-column="column1">MM.DD.YYYY</td>
+                    <td class="column2" data-column="column2">ActionName</td>
+                    <td class="column3" data-column="column3">Identifier</td>
+                    <td class="column4" data-column="column4">ClientName</td>
+                    <td class="column5" data-column="column5">Comment</td>
+                </tr>
 
-            <tr class="row">
-                <td class="column1" data-column="column1">MM.DD.YYYY</td>
-                <td class="column2" data-column="column2">ActionName</td>
-                <td class="column3" data-column="column3">Identifier</td>
-                <td class="column4" data-column="column4">ClientName</td>
-                <td class="column5" data-column="column5">Comment</td>
-            </tr>
+                <tr class="row">
+                    <td class="column1" data-column="column1">MM.DD.YYYY</td>
+                    <td class="column2" data-column="column2">ActionName</td>
+                    <td class="column3" data-column="column3">Identifier</td>
+                    <td class="column4" data-column="column4">ClientName</td>
+                    <td class="column5" data-column="column5">Comment</td>
+                </tr>
 
-            <tr class="row">
-                <td class="column1" data-column="column1">MM.DD.YYYY</td>
-                <td class="column2" data-column="column2">ActionName</td>
-                <td class="column3" data-column="column3">Identifier</td>
-                <td class="column4" data-column="column4">ClientName</td>
-                <td class="column5" data-column="column5">Comment</td>
-            </tr>
+                <tr class="row">
+                    <td class="column1" data-column="column1">MM.DD.YYYY</td>
+                    <td class="column2" data-column="column2">ActionName</td>
+                    <td class="column3" data-column="column3">Identifier</td>
+                    <td class="column4" data-column="column4">ClientName</td>
+                    <td class="column5" data-column="column5">Comment</td>
+                </tr>
 
-            <tr class="row">
-                <td class="column1" data-column="column1">MM.DD.YYYY</td>
-                <td class="column2" data-column="column2">ActionName</td>
-                <td class="column3" data-column="column3">Identifier</td>
-                <td class="column4" data-column="column4">ClientName</td>
-                <td class="column5" data-column="column5">Comment</td>
-            </tr>
+                <tr class="row">
+                    <td class="column1" data-column="column1">MM.DD.YYYY</td>
+                    <td class="column2" data-column="column2">ActionName</td>
+                    <td class="column3" data-column="column3">Identifier</td>
+                    <td class="column4" data-column="column4">ClientName</td>
+                    <td class="column5" data-column="column5">Comment</td>
+                </tr>
 
-            <tr class="row">
-                <td class="column1" data-column="column1">MM.DD.YYYY</td>
-                <td class="column2" data-column="column2">ActionName</td>
-                <td class="column3" data-column="column3">Identifier</td>
-                <td class="column4" data-column="column4">ClientName</td>
-                <td class="column5" data-column="column5">Comment</td>
-            </tr>
-
-            <tr class="row">
-                <td class="column1" data-column="column1">MM.DD.YYYY</td>
-                <td class="column2" data-column="column2">ActionName</td>
-                <td class="column3" data-column="column3">Identifier</td>
-                <td class="column4" data-column="column4">ClientName</td>
-                <td class="column5" data-column="column5">Comment</td>
-            </tr>
-
-            <tr class="row">
-                <td class="column1" data-column="column1">MM.DD.YYYY</td>
-                <td class="column2" data-column="column2">ActionName</td>
-                <td class="column3" data-column="column3">Identifier</td>
-                <td class="column4" data-column="column4">ClientName</td>
-                <td class="column5" data-column="column5">Comment</td>
-            </tr>
-            </tbody>
-        </table>
-        <div class="table-nav">
-            <a href="#" class="bottom-btn first-btn"><i class="fa fa-angle-double-left"> </i> First</a>
-            <a href="#" class="bottom-btn previous-btn"><i class="fa fa-angle-left"> </i> Previous</a>
-            <a href="index.html" class="bottom-btn next-btn">Next <i class="fa fa-angle-right"> </i></a>
-            <a href="index.html" class="bottom-btn last-btn">Last <i class="fa fa-angle-double-right"> </i></a>
+                <tr class="row">
+                    <td class="column1" data-column="column1">MM.DD.YYYY</td>
+                    <td class="column2" data-column="column2">ActionName</td>
+                    <td class="column3" data-column="column3">Identifier</td>
+                    <td class="column4" data-column="column4">ClientName</td>
+                    <td class="column5" data-column="column5">Comment</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="table-nav">
+                <a href="#" class="bottom-btn first-btn"><i class="fa fa-angle-double-left"> </i> First</a>
+                <a href="#" class="bottom-btn previous-btn"><i class="fa fa-angle-left"> </i> Previous</a>
+                <a href="index.html" class="bottom-btn next-btn">Next <i class="fa fa-angle-right"> </i></a>
+                <a href="index.html" class="bottom-btn last-btn">Last <i class="fa fa-angle-double-right"> </i></a>
+            </div>
         </div>
     </div>
 </div>
-<script>
-    var container = document.getElementsByClassName('container-alert-box')[0];
-
-    container.onclick = function(event) {
-        if (event.target.classList.contains('remove-button')) {
-            event.target.parentNode.hidden = !event.target.parentNode.hidden;
-        }
-    }
-</script>
 </body>
 <script src="assets/js/vendor.js"></script>
+<script src="assets/js/functions.js"></script>
 <script src="assets/js/array.methods.js"></script>
 <script src="assets/js/app.js"></script>
 </html>
