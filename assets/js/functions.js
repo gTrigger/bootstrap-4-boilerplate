@@ -1,5 +1,24 @@
 $(document).ready(function () {
 
+    let arr = [];
+    let obj = {name: 'test'};
+    arr.push(obj);
+
+    function saveData() {
+        localStorage.setItem("table-data", JSON.stringify(arr));
+    }
+
+    function loadData() {
+        return JSON.parse(localStorage.getItem("table-data"))
+    }
+
+    function render() {
+
+
+    }
+
+
+
     // Блюрим фон и выдаем алерт с приветствием, по нажатию кнопки снимаем блюр и убираем алерт
     var container = document.getElementsByClassName('container-alert-box')[0];
     var overlay = document.getElementById('overlay');
@@ -36,7 +55,7 @@ $(document).ready(function () {
     var addBtn = tableActions.getElementsByClassName('add-btn')[0];
     var containerTableInput = document.getElementsByClassName('container-table-input')[0];
 
-    tableActions.onclick = function(event) {
+    tableActions.onclick = function (event) {
         if (event.target.classList.contains('add-btn')) {
             containerTableInput.classList.toggle('hidden');
             containerTableInput.onclick = function (event) {

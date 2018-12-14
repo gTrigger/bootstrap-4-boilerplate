@@ -532,7 +532,7 @@ for (var i = 0; i < list.length; i++) {
 
 
 //Полифилл для textContent
-(function() {
+/*(function() {
     if (!Element.prototype.textContent === undefined) {
         Object.defineProperty(Element.prototype, 'innerText', {
             get: function() {
@@ -543,7 +543,7 @@ for (var i = 0; i < list.length; i++) {
             }
         });
     }
-})();
+})();*/
 
 
 // Получаем пользовательский атрибут

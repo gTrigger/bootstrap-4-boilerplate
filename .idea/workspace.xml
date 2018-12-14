@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="56ed1e4f-3bf7-4e44-8c4c-deb7f43aa764" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/bootstrap-4-boilerplate.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/vendor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,27 +22,27 @@
     <session id="794428387">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="3444" />
-          <entry key="js" value="8996" />
-          <entry key="scss" value="2395" />
+          <entry key="html" value="3508" />
+          <entry key="js" value="9150" />
+          <entry key="scss" value="2444" />
           <entry key="txt" value="139" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="3446" />
-          <entry key="JavaScript" value="8994" />
+          <entry key="HTML" value="3510" />
+          <entry key="JavaScript" value="9148" />
           <entry key="PLAIN_TEXT" value="139" />
-          <entry key="SCSS" value="2395" />
+          <entry key="SCSS" value="2444" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="2" />
-          <entry key="js" value="7" />
+          <entry key="js" value="10" />
           <entry key="json" value="2" />
           <entry key="rnc" value="1" />
-          <entry key="scss" value="2" />
+          <entry key="scss" value="4" />
           <entry key="ts" value="2" />
         </counts>
       </usages-collector>
@@ -49,9 +50,9 @@
         <counts>
           <entry key="HTML" value="2" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="7" />
+          <entry key="JavaScript" value="10" />
           <entry key="RNG Compact" value="1" />
-          <entry key="SCSS" value="2" />
+          <entry key="SCSS" value="4" />
           <entry key="TypeScript" value="2" />
         </counts>
       </usages-collector>
@@ -67,14 +68,14 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5065574">
+    <splitter split-orientation="horizontal" split-proportion="0.39016172">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="141">
-                  <caret line="38" column="66" lean-forward="true" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
+                <state relative-caret-position="90">
+                  <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
                   <folding>
                     <element signature="e#1684#1690#0" expanded="true" />
                     <element signature="e#1853#1859#0" expanded="true" />
@@ -92,6 +93,15 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/js/app.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="8325">
+                  <caret line="555" selection-start-line="555" selection-end-line="564" selection-end-column="1" />
+                </state>
+              </provider>
+            </entry>
+          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -99,17 +109,27 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/css/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="394">
-                  <caret line="406" column="20" lean-forward="true" selection-start-line="406" selection-start-column="20" selection-end-line="406" selection-end-column="20" />
+                <state relative-caret-position="15">
+                  <caret line="1" column="2" selection-start-line="1" selection-end-line="1" selection-end-column="33" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/css/2-plugins/_index.scss">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/assets/css/1-frameworks/_index.scss">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/js/functions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="600">
-                  <caret line="40" column="59" lean-forward="true" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
+                <state>
+                  <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -151,11 +171,11 @@
         <option value="$PROJECT_DIR$/assets/js/test.js" />
         <option value="$PROJECT_DIR$/assets/js/array.methods.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.es6" />
-        <option value="$PROJECT_DIR$/assets/js/app.js" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/assets/css/main.scss" />
+        <option value="$PROJECT_DIR$/assets/js/app.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/js/functions.js" />
+        <option value="$PROJECT_DIR$/assets/css/main.scss" />
       </list>
     </option>
   </component>
@@ -235,7 +255,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
     <option name="y" value="25" />
     <option name="width" value="927" />
@@ -265,6 +285,28 @@
               <item name="bootstrap-4-boilerplate" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bootstrap-4-boilerplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bootstrap-4-boilerplate" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="1-frameworks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bootstrap-4-boilerplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bootstrap-4-boilerplate" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="1-frameworks" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bootstrap-4-boilerplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bootstrap-4-boilerplate" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="2-plugins" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bootstrap-4-boilerplate" type="b2602c69:ProjectViewProjectNode" />
@@ -436,13 +478,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93567000" />
+    <option name="totallyTimeSpent" value="99063000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="7" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48972973" visible="true" weight="0.0" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48972973" visible="true" weight="0.0" />
       <window_info id="Structure" order="1" sideWeight="0.50054055" side_tool="true" weight="0.15737705" />
       <window_info id="Gulp" order="2" sideWeight="0.50080776" side_tool="true" weight="0.34059098" />
       <window_info id="npm" order="3" sideWeight="0.5102703" side_tool="true" weight="0.18961748" />
@@ -463,6 +505,27 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Gulp" order="0" sideWeight="0.50080776" side_tool="true" weight="0.3406497" />
+      <window_info id="npm" order="1" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49919224" visible="true" weight="0.3406497" />
+      <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50054646" side_tool="true" weight="0.32972974" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info anchor="bottom" id="Find" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="5" weight="0.30444205" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49945354" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -501,20 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="1063" column="43" lean-forward="true" selection-start-line="1063" selection-start-column="43" selection-end-line="1063" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/vendor.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -543,24 +592,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/functions.js">
+    <entry file="file://$PROJECT_DIR$/assets/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="59" lean-forward="true" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
+        <state relative-caret-position="8325">
+          <caret line="555" selection-start-line="555" selection-end-line="564" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/main.scss">
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="406" column="20" lean-forward="true" selection-start-line="406" selection-start-column="20" selection-end-line="406" selection-end-column="20" />
+        <state relative-caret-position="528">
+          <caret line="36" column="25" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="25" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/2-plugins/_index.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/1-frameworks/_index.scss">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="38" column="66" lean-forward="true" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
+        <state relative-caret-position="90">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           <folding>
             <element signature="e#1684#1690#0" expanded="true" />
             <element signature="e#1853#1859#0" expanded="true" />
@@ -574,6 +629,27 @@
             <element signature="e#3635#3641#0" expanded="true" />
             <element signature="e#3754#3760#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/vendor/jquery-3.3.1.slim.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="2" selection-start-line="1" selection-end-line="1" selection-end-column="33" />
         </state>
       </provider>
     </entry>
