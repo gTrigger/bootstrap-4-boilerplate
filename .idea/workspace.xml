@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="56ed1e4f-3bf7-4e44-8c4c-deb7f43aa764" name="Default Changelist" comment="Tried to make the LocalStorage thingy, but failed.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/functions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -19,18 +20,18 @@
     <session id="794428387">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="3567" />
-          <entry key="js" value="10815" />
-          <entry key="scss" value="2444" />
+          <entry key="html" value="3690" />
+          <entry key="js" value="11559" />
+          <entry key="scss" value="2478" />
           <entry key="txt" value="198" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="3569" />
-          <entry key="JavaScript" value="10813" />
+          <entry key="HTML" value="3692" />
+          <entry key="JavaScript" value="11557" />
           <entry key="PLAIN_TEXT" value="198" />
-          <entry key="SCSS" value="2444" />
+          <entry key="SCSS" value="2478" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -66,14 +67,27 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.3726776">
+    <splitter split-orientation="horizontal" split-proportion="0.4464481">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="42">
-                  <caret line="22" selection-start-line="22" selection-end-line="22" />
+                <state relative-caret-position="259">
+                  <caret line="144" column="37" lean-forward="true" selection-start-line="144" selection-start-column="37" selection-end-line="144" selection-end-column="37" />
+                  <folding>
+                    <element signature="e#1691#1697#0" expanded="true" />
+                    <element signature="e#1842#1848#0" expanded="true" />
+                    <element signature="e#1848#1854#0" expanded="true" />
+                    <element signature="e#2023#2029#0" expanded="true" />
+                    <element signature="e#2206#2212#0" expanded="true" />
+                    <element signature="e#2362#2368#0" expanded="true" />
+                    <element signature="e#2509#2515#0" expanded="true" />
+                    <element signature="e#2661#2667#0" expanded="true" />
+                    <element signature="e#3447#3453#0" expanded="true" />
+                    <element signature="e#3534#3540#0" expanded="true" />
+                    <element signature="e#3653#3659#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -94,8 +108,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/css/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="900">
-                  <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
+                <state relative-caret-position="-2150">
+                  <caret line="241" column="25" lean-forward="true" selection-start-line="241" selection-start-column="25" selection-end-line="241" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -103,8 +117,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/js/functions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="633">
-                  <caret line="71" column="43" lean-forward="true" selection-start-line="71" selection-start-column="43" selection-end-line="71" selection-end-column="43" />
+                <state relative-caret-position="783">
+                  <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
                 </state>
               </provider>
             </entry>
@@ -148,9 +162,9 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.es6" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/assets/js/app.js" />
+        <option value="$PROJECT_DIR$/assets/js/functions.js" />
         <option value="$PROJECT_DIR$/assets/css/main.scss" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/assets/js/functions.js" />
       </list>
     </option>
   </component>
@@ -231,74 +245,23 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1246" />
-    <option name="y" value="27" />
+    <option name="x" value="67" />
+    <option name="y" value="25" />
     <option name="width" value="681" />
-    <option name="height" value="1053" />
+    <option name="height" value="789" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="bootstrap-4-boilerplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bootstrap-4-boilerplate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bootstrap-4-boilerplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bootstrap-4-boilerplate" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bootstrap-4-boilerplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bootstrap-4-boilerplate" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bootstrap-4-boilerplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bootstrap-4-boilerplate" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="1-frameworks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bootstrap-4-boilerplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bootstrap-4-boilerplate" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="1-frameworks" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bootstrap-4-boilerplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bootstrap-4-boilerplate" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="2-plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bootstrap-4-boilerplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bootstrap-4-boilerplate" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="RecentsManager">
@@ -454,7 +417,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119595000" />
+    <option name="totallyTimeSpent" value="135495000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -598,22 +561,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="71" column="43" lean-forward="true" selection-start-line="71" selection-start-column="43" selection-end-line="71" selection-end-column="43" />
+        <state relative-caret-position="-2150">
+          <caret line="241" column="25" lean-forward="true" selection-start-line="241" selection-start-column="25" selection-end-line="241" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="259">
+          <caret line="144" column="37" lean-forward="true" selection-start-line="144" selection-start-column="37" selection-end-line="144" selection-end-column="37" />
+          <folding>
+            <element signature="e#1691#1697#0" expanded="true" />
+            <element signature="e#1842#1848#0" expanded="true" />
+            <element signature="e#1848#1854#0" expanded="true" />
+            <element signature="e#2023#2029#0" expanded="true" />
+            <element signature="e#2206#2212#0" expanded="true" />
+            <element signature="e#2362#2368#0" expanded="true" />
+            <element signature="e#2509#2515#0" expanded="true" />
+            <element signature="e#2661#2667#0" expanded="true" />
+            <element signature="e#3447#3453#0" expanded="true" />
+            <element signature="e#3534#3540#0" expanded="true" />
+            <element signature="e#3653#3659#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
         </state>
       </provider>
     </entry>
