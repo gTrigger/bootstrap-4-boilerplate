@@ -58,16 +58,17 @@ $(document).ready(function () {
                     };
                     arr.push(obj);
                     localStorage.setItem("newRowData", JSON.stringify(arr));
-                    var returnArr = JSON.parse(localStorage.getItem("newRowData"));
+                    // var returnArr = JSON.parse(localStorage.getItem("newRowData"));
 
-                    for (var i = 0; i < returnArr.length; i++) {
+                    // for (var i = 0; i < arr.length; i++) {
                         var newRow = tableData.insertRow(1);
 
-                        for (var elem in returnArr[i]) {
+                        for (var elem in obj) {
                             var newCell = newRow.insertCell();
-                            newCell.innerText = returnArr[i][elem];
+                            newCell.innerText = obj[elem];
                         }
-                    }
+
+                    // }
                     containerTableInput.classList.toggle('hidden');
                 }
 

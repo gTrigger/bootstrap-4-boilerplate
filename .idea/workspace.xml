@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/assets/js/functions.js" line="44" />
+    <bookmark url="file://$PROJECT_DIR$/index.html" line="143" />
+    <bookmark url="file://$PROJECT_DIR$/index.html" line="136" mnemonic="K" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="56ed1e4f-3bf7-4e44-8c4c-deb7f43aa764" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/functions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -19,38 +26,42 @@
     <session id="794428387">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="3726" />
-          <entry key="js" value="12042" />
-          <entry key="scss" value="2495" />
-          <entry key="txt" value="204" />
+          <entry key="es6" value="167" />
+          <entry key="html" value="3765" />
+          <entry key="js" value="12058" />
+          <entry key="scss" value="2535" />
+          <entry key="txt" value="266" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="3728" />
-          <entry key="JavaScript" value="12040" />
-          <entry key="PLAIN_TEXT" value="204" />
-          <entry key="SCSS" value="2495" />
+          <entry key="HTML" value="3767" />
+          <entry key="JavaScript" value="12056" />
+          <entry key="PLAIN_TEXT" value="266" />
+          <entry key="SCSS" value="2535" />
+          <entry key="Scratch" value="167" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="2" />
-          <entry key="js" value="11" />
+          <entry key="es6" value="1" />
+          <entry key="html" value="3" />
+          <entry key="js" value="12" />
           <entry key="json" value="2" />
           <entry key="rnc" value="1" />
           <entry key="scss" value="4" />
-          <entry key="ts" value="3" />
+          <entry key="ts" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="2" />
+          <entry key="HTML" value="3" />
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="11" />
+          <entry key="JavaScript" value="12" />
           <entry key="RNG Compact" value="1" />
           <entry key="SCSS" value="4" />
-          <entry key="TypeScript" value="3" />
+          <entry key="Scratch" value="1" />
+          <entry key="TypeScript" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -65,66 +76,73 @@
       </usages-collector>
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="bootstrap-4-boilerplate" />
+  </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.44480875">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="454">
-                  <caret line="154" column="23" lean-forward="true" selection-start-line="154" selection-start-column="23" selection-end-line="154" selection-end-column="23" />
-                  <folding>
-                    <element signature="e#1691#1697#0" expanded="true" />
-                    <element signature="e#1842#1848#0" expanded="true" />
-                    <element signature="e#1848#1854#0" expanded="true" />
-                    <element signature="e#2023#2029#0" expanded="true" />
-                    <element signature="e#2206#2212#0" expanded="true" />
-                    <element signature="e#2362#2368#0" expanded="true" />
-                    <element signature="e#2509#2515#0" expanded="true" />
-                    <element signature="e#2661#2667#0" expanded="true" />
-                    <element signature="e#3447#3453#0" expanded="true" />
-                    <element signature="e#3534#3540#0" expanded="true" />
-                    <element signature="e#3653#3659#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/js/app.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="8325">
-                  <caret line="555" selection-start-line="555" selection-end-line="564" selection-end-column="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/assets/css/main.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-266">
-                  <caret line="358" column="15" lean-forward="true" selection-start-line="358" selection-start-column="15" selection-end-line="358" selection-end-column="15" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/assets/js/functions.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="543">
-                  <caret line="75" column="17" lean-forward="true" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1965">
+              <caret line="131" column="39" lean-forward="true" selection-start-line="131" selection-start-column="39" selection-end-line="131" selection-end-column="39" />
+              <folding>
+                <element signature="e#1691#1697#0" expanded="true" />
+                <element signature="e#1842#1848#0" expanded="true" />
+                <element signature="e#1848#1854#0" expanded="true" />
+                <element signature="e#2023#2029#0" expanded="true" />
+                <element signature="e#2206#2212#0" expanded="true" />
+                <element signature="e#2362#2368#0" expanded="true" />
+                <element signature="e#2509#2515#0" expanded="true" />
+                <element signature="e#2661#2667#0" expanded="true" />
+                <element signature="e#3447#3453#0" expanded="true" />
+                <element signature="e#3534#3540#0" expanded="true" />
+                <element signature="e#3653#3659#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-396">
+              <caret line="542" column="13" lean-forward="true" selection-start-line="542" selection-start-column="13" selection-end-line="542" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/main.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="314" column="24" lean-forward="true" selection-start-line="314" selection-start-column="24" selection-end-line="314" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/functions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.es6">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -164,6 +182,7 @@
         <option value="$PROJECT_DIR$/assets/css/main.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/js/functions.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.es6" />
       </list>
     </option>
   </component>
@@ -182,58 +201,14 @@
     <gulpfiles>
       <GulpfileState>
         <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
-        <tasks>
-          <GulpTaskState>
-            <task-name>concatScripts</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <dependencies>
-              <dependency value="concatScripts" />
-            </dependencies>
-            <task-name>minifyScripts</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>compileSass</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <dependencies>
-              <dependency value="compileSass" />
-            </dependencies>
-            <task-name>minifyCss</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>watchFiles</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>clean</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <task-name>renameSources</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <dependencies>
-              <dependency value="minifyScripts" />
-              <dependency value="minifyCss" />
-            </dependencies>
-            <task-name>build</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <dependencies>
-              <dependency value="watchFiles" />
-            </dependencies>
-            <task-name>serve</task-name>
-          </GulpTaskState>
-          <GulpTaskState>
-            <dependencies>
-              <dependency value="clean" />
-              <dependency value="build" />
-            </dependencies>
-            <task-name>default</task-name>
-          </GulpTaskState>
-        </tasks>
       </GulpfileState>
     </gulpfiles>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGulp">
+      <scroll-view-position x="0" y="0" />
+    </layout>
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
@@ -246,7 +221,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
     <option name="y" value="25" />
-    <option name="width" value="927" />
+    <option name="width" value="1853" />
     <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -254,10 +229,56 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="bootstrap-4-boilerplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bootstrap-4-boilerplate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bootstrap-4-boilerplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bootstrap-4-boilerplate" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bootstrap-4-boilerplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bootstrap-4-boilerplate" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bootstrap-4-boilerplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bootstrap-4-boilerplate" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bootstrap-4-boilerplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bootstrap-4-boilerplate" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bootstrap-4-boilerplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="bootstrap-4-boilerplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="ECMAScript 6" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -280,7 +301,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gulp.js.default">
+  <component name="RunManager" selected="Node.js.scratch_1.es6">
+    <configuration name="functions.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="functions.js" working-dir="$PROJECT_DIR$/assets/js">
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch_1.es6" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.es6" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="scratch.es6" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch.es6" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -289,17 +316,6 @@
       <node-options />
       <gulpfile />
       <tasks />
-      <arguments />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="build" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
-      <tasks>
-        <task>build</task>
-      </tasks>
       <arguments />
       <envs />
       <method v="2" />
@@ -339,16 +355,18 @@
     <list>
       <item itemvalue="Gulp.js.default" />
       <item itemvalue="Gulp.js.serve" />
-      <item itemvalue="Gulp.js.build" />
       <item itemvalue="Node.js.scratch.es6" />
       <item itemvalue="npm.test" />
+      <item itemvalue="Node.js.functions.js" />
+      <item itemvalue="Node.js.scratch_1.es6" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.scratch_1.es6" />
+        <item itemvalue="Node.js.functions.js" />
         <item itemvalue="npm.test" />
         <item itemvalue="Node.js.scratch.es6" />
         <item itemvalue="Gulp.js.serve" />
-        <item itemvalue="Gulp.js.build" />
       </list>
     </recent_temporary>
   </component>
@@ -412,61 +430,92 @@
       <option name="project" value="LOCAL" />
       <updated>1545143795365</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Tried to make the LocalStorage thingy, but still failed. Now i can add rows and delete it, but only once :D">
+      <created>1545220611293</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1545220611293</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150008000" />
+    <option name="totallyTimeSpent" value="156955000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48972973" weight="0.32890365" />
-      <window_info id="Structure" order="1" sideWeight="0.50054055" side_tool="true" weight="0.15737705" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4935484" visible="true" weight="0.13169399" />
+      <window_info id="Structure" order="1" sideWeight="0.5064516" side_tool="true" weight="0.13169399" />
       <window_info id="Gulp" order="2" sideWeight="0.50080776" side_tool="true" weight="0.34059098" />
       <window_info id="npm" order="3" sideWeight="0.5102703" side_tool="true" weight="0.18961748" />
-      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Favorites" order="4" sideWeight="0.5064516" side_tool="true" weight="0.13169399" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50054646" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.49945354" weight="0.44972974" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50054646" side_tool="true" weight="0.32972974" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="5" weight="0.13651137" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49945354" weight="0.32864866" />
+      <window_info anchor="bottom" id="Terminal" order="5" sideWeight="0.49945354" weight="0.13621622" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49945354" visible="true" weight="0.32864866" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="TODO" order="10" sideWeight="0.49945354" weight="0.32972974" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32864866" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Gulp" order="0" sideWeight="0.50080776" side_tool="true" weight="0.3406497" />
-      <window_info id="npm" order="1" side_tool="true" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49919224" visible="true" weight="0.3406497" />
-      <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50054646" side_tool="true" weight="0.32972974" />
-      <window_info anchor="bottom" id="Message" order="3" />
-      <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="5" weight="0.30444205" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49945354" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -484,7 +533,8 @@
     <MESSAGE value="Updated html and css files, added some js-scripts." />
     <MESSAGE value="Updated html and css files, added some js." />
     <MESSAGE value="Tried to make the LocalStorage thingy, but still failed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Tried to make the LocalStorage thingy, but still failed." />
+    <MESSAGE value="Tried to make the LocalStorage thingy, but still failed. Now i can add rows and delete it, but only once :D" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tried to make the LocalStorage thingy, but still failed. Now i can add rows and delete it, but only once :D" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es2017.string.d.ts">
@@ -542,34 +592,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="6150" column="4" selection-start-line="6150" selection-start-column="4" selection-end-line="6150" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/1-frameworks/_index.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8325">
-          <caret line="555" selection-start-line="555" selection-end-line="564" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-266">
-          <caret line="358" column="15" lean-forward="true" selection-start-line="358" selection-start-column="15" selection-end-line="358" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="154" column="23" lean-forward="true" selection-start-line="154" selection-start-column="23" selection-end-line="154" selection-end-column="23" />
+        <state relative-caret-position="1965">
+          <caret line="131" column="39" lean-forward="true" selection-start-line="131" selection-start-column="39" selection-end-line="131" selection-end-column="39" />
           <folding>
             <element signature="e#1691#1697#0" expanded="true" />
             <element signature="e#1842#1848#0" expanded="true" />
@@ -586,10 +615,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="314" column="24" lean-forward="true" selection-start-line="314" selection-start-column="24" selection-end-line="314" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-396">
+          <caret line="542" column="13" lean-forward="true" selection-start-line="542" selection-start-column="13" selection-end-line="542" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="10326" column="19" lean-forward="true" selection-start-line="10326" selection-start-column="19" selection-end-line="10326" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="75" column="17" lean-forward="true" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
+        <state relative-caret-position="210">
+          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.es6">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*@import "1-frameworks/index";*/
+@import "1-frameworks/index";
 /*Сброс стилей*/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del,
@@ -287,10 +287,11 @@ tbody tr {
   background: linear-gradient(to top, #127361 0%, #22084b 100%);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 10px 20px rgba(0, 0, 0, 0.3);
   width: 400px;
-  height: 550px;
+  height: 580px;
   padding: 20px;
 }
 .table-input-box input {
+  height: 40px;
   padding: 6px;
   border: 2px solid white;
   border-radius: 5px;
@@ -299,7 +300,7 @@ tbody tr {
   margin: 5px;
 }
 .table-input-box .comment{
-  height: 100px;
+  height: 80px;
 }
 .table-input-box form input:focus {
    border: 2px solid #b8c0f1;
@@ -350,7 +351,8 @@ tbody tr {
 /*Стили для поиска*/
 .searchbox {
   display: inline-block;
-  float: right;
+  float: left;
+  height: 35px;
 }
 
 /*Стили для нижних кнопок*/
