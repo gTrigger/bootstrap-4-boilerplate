@@ -42,8 +42,7 @@ $(document).ready(function () {
     var containerTableInput = document.getElementsByClassName('container-table-input')[0];
     var tableData = document.getElementsByClassName('table-data')[0];
     let arr = [];
-    tableActions.onclick = function (event) {
-
+    tableActions.onclick = function () {
         if (event.target.classList.contains('add-btn')) {
             containerTableInput.classList.toggle('hidden');
             containerTableInput.onclick = function (event) {
@@ -77,9 +76,22 @@ $(document).ready(function () {
                 }
             }
         }
+        else if (event.target.classList.contains('trash-btn')) {
+            if (confirm("Are you sure you want to delete entire table?") == true) {
+                var tBody = tableData.getElementsByTagName('tbody')[0];
 
-        else if (event.target.classList.contains('delete-btn')) {
-            alert('ok-ok, i will delete it later');
+                while(tBody.hasChildNodes())
+                {
+                    tBody.removeChild(tBody.lastChild);
+                }
+            }
+        }
+    };
+    tableData.onclick = function () {
+        if (event.target.classList.contains('trash-btn')) {
+            if (confirm("Are you sure you want to delete this row?") == true) {
+                event.target.parentNode.parentNode.remove();
+            }
         }
     }
 });

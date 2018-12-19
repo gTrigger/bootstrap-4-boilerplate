@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="56ed1e4f-3bf7-4e44-8c4c-deb7f43aa764" name="Default Changelist" comment="Tried to make the LocalStorage thingy, but failed.">
+    <list default="true" id="56ed1e4f-3bf7-4e44-8c4c-deb7f43aa764" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/functions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -20,18 +19,18 @@
     <session id="794428387">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="3690" />
-          <entry key="js" value="11559" />
-          <entry key="scss" value="2478" />
-          <entry key="txt" value="198" />
+          <entry key="html" value="3726" />
+          <entry key="js" value="12042" />
+          <entry key="scss" value="2495" />
+          <entry key="txt" value="204" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="3692" />
-          <entry key="JavaScript" value="11557" />
-          <entry key="PLAIN_TEXT" value="198" />
-          <entry key="SCSS" value="2478" />
+          <entry key="HTML" value="3728" />
+          <entry key="JavaScript" value="12040" />
+          <entry key="PLAIN_TEXT" value="204" />
+          <entry key="SCSS" value="2495" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -67,14 +66,14 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4464481">
+    <splitter split-orientation="horizontal" split-proportion="0.44480875">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="259">
-                  <caret line="144" column="37" lean-forward="true" selection-start-line="144" selection-start-column="37" selection-end-line="144" selection-end-column="37" />
+                <state relative-caret-position="454">
+                  <caret line="154" column="23" lean-forward="true" selection-start-line="154" selection-start-column="23" selection-end-line="154" selection-end-column="23" />
                   <folding>
                     <element signature="e#1691#1697#0" expanded="true" />
                     <element signature="e#1842#1848#0" expanded="true" />
@@ -108,8 +107,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/css/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-2150">
-                  <caret line="241" column="25" lean-forward="true" selection-start-line="241" selection-start-column="25" selection-end-line="241" selection-end-column="25" />
+                <state relative-caret-position="-266">
+                  <caret line="358" column="15" lean-forward="true" selection-start-line="358" selection-start-column="15" selection-end-line="358" selection-end-column="15" />
                 </state>
               </provider>
             </entry>
@@ -117,8 +116,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/js/functions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="783">
-                  <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+                <state relative-caret-position="543">
+                  <caret line="75" column="17" lean-forward="true" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -162,9 +161,9 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.es6" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/assets/js/app.js" />
-        <option value="$PROJECT_DIR$/assets/js/functions.js" />
         <option value="$PROJECT_DIR$/assets/css/main.scss" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/js/functions.js" />
       </list>
     </option>
   </component>
@@ -247,8 +246,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="67" />
     <option name="y" value="25" />
-    <option name="width" value="681" />
-    <option name="height" value="789" />
+    <option name="width" value="927" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -406,18 +405,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544797880724</updated>
     </task>
-    <task id="LOCAL-00006" summary="Wrote some random text to check if github works correctly">
-      <created>1544008037967</created>
+    <task id="LOCAL-00006" summary="Tried to make the LocalStorage thingy, but still failed.">
+      <created>1545143795365</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1544008037967</updated>
+      <updated>1545143795365</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135495000" />
+    <option name="totallyTimeSpent" value="150008000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -484,7 +483,8 @@
     <MESSAGE value="Added some exercises with events, updated html and css files." />
     <MESSAGE value="Updated html and css files, added some js-scripts." />
     <MESSAGE value="Updated html and css files, added some js." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated html and css files, added some js." />
+    <MESSAGE value="Tried to make the LocalStorage thingy, but still failed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Tried to make the LocalStorage thingy, but still failed." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es2017.string.d.ts">
@@ -561,15 +561,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2150">
-          <caret line="241" column="25" lean-forward="true" selection-start-line="241" selection-start-column="25" selection-end-line="241" selection-end-column="25" />
+        <state relative-caret-position="-266">
+          <caret line="358" column="15" lean-forward="true" selection-start-line="358" selection-start-column="15" selection-end-line="358" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="144" column="37" lean-forward="true" selection-start-line="144" selection-start-column="37" selection-end-line="144" selection-end-column="37" />
+        <state relative-caret-position="454">
+          <caret line="154" column="23" lean-forward="true" selection-start-line="154" selection-start-column="23" selection-end-line="154" selection-end-column="23" />
           <folding>
             <element signature="e#1691#1697#0" expanded="true" />
             <element signature="e#1842#1848#0" expanded="true" />
@@ -588,8 +588,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+        <state relative-caret-position="543">
+          <caret line="75" column="17" lean-forward="true" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
         </state>
       </provider>
     </entry>
