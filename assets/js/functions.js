@@ -1,3 +1,4 @@
+// npm install <name.js> --save || --save-dev
 $(document).ready(function () {
 
     // Блюрим фон и выдаем алерт с приветствием, по нажатию кнопки снимаем блюр и убираем алерт
@@ -37,11 +38,29 @@ $(document).ready(function () {
     };
 
     // Работаем с таблицей
-
     var tableActions = document.getElementsByClassName('table-actions')[0];
     var containerTableInput = document.getElementsByClassName('container-table-input')[0];
     var tableData = document.getElementsByClassName('table-data')[0];
     let arr = [];
+
+    // 1. Заполняем из localStorage при загрузке
+    window.onload = function loadData() {
+
+        var returnArr = JSON.parse(localStorage.getItem("newRowData"));
+
+        for (var i = 0; i < returnArr.length; i++) {
+            var newRow = tableData.insertRow(1);
+
+            for (var elem in returnArr[i]) {
+                var newCell = newRow.insertCell();
+                newCell.innerText = returnArr[i][elem];
+            }
+            var deleteCell = newRow.insertCell();
+            deleteCell.innerHTML = "<td><i class=\"fa fa-trash-o trash-btn\"></i></td>";
+        }
+    };
+
+    // 2. Сохраняем-удаляем элементы.
     tableActions.onclick = function () {
         if (event.target.classList.contains('add-btn')) {
             containerTableInput.classList.toggle('hidden');
@@ -58,17 +77,15 @@ $(document).ready(function () {
                     };
                     arr.push(obj);
                     localStorage.setItem("newRowData", JSON.stringify(arr));
-                    // var returnArr = JSON.parse(localStorage.getItem("newRowData"));
 
-                    // for (var i = 0; i < arr.length; i++) {
                         var newRow = tableData.insertRow(1);
-
                         for (var elem in obj) {
                             var newCell = newRow.insertCell();
-                            newCell.innerText = obj[elem];
+                            newCell.innerHTML = obj[elem];
                         }
+                        var deleteCell = newRow.insertCell();
+                        deleteCell.innerHTML = "<td><i class=\"fa fa-trash-o trash-btn\"></i></td>";
 
-                    // }
                     containerTableInput.classList.toggle('hidden');
                 }
 
