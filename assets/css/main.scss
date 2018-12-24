@@ -258,7 +258,11 @@ thead tr:first-child {
 tbody tr {
   height: 30px;
 }
-
+tbody tr:last-child {
+  font-weight: bolder;
+  background-color: #d2def1;
+  height: 30px;
+}
 .table-actions form {
   display: inline-block;
 }

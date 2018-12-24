@@ -11,12 +11,13 @@ $(document).ready(function () {
     }
     else overlay.classList.remove('blur');
 
-    removeBtn.onclick = function (event) {
+    var removeBtnClick = function (event) {
         localStorage.setItem("alert", "disabled");
         container.classList.toggle("hidden");
         overlay.classList.remove('blur');
         overlay.classList.add('blur-out');
     };
+    removeBtn.onclick = removeBtnClick;
 
     // Переключаем видимость блоков
     var menu = document.getElementById('menu');
@@ -48,7 +49,7 @@ $(document).ready(function () {
         var returnArr = arr = JSON.parse(localStorage.getItem("newRowData"));
 
         for (var i = 0; i < returnArr.length; i++) {
-            var newRow =  tableData.insertRow(1);
+            var newRow = tableData.insertRow(1);
 
             for (var elem in returnArr[i]) {
                 var newCell = newRow.insertCell();
@@ -58,7 +59,7 @@ $(document).ready(function () {
             deleteCell.innerHTML = "<td><i class=\"fa fa-trash-o trash-btn\"></i></td>";
         }
     };
-// 2. Сохраняем-удаляем элементы.
+
     // 2. Сохраняем-удаляем элементы.
     tableActions.onclick = function () {
         if (event.target.classList.contains('add-btn')) {
@@ -97,18 +98,22 @@ $(document).ready(function () {
             if (confirm("Are you sure you want to delete entire table?") == true) {
                 var tBody = tableData.getElementsByTagName('tbody')[0];
 
-                while(tBody.hasChildNodes())
+                localStorage.removeItem('newRowData');
+
+                while (tBody.childNodes.length > 2)
                 {
-                    tBody.removeChild(tBody.lastChild);
+                    tBody.removeChild(tBody.firstChild);
                 }
             }
         }
     };
     tableData.onclick = function () {
         if (event.target.classList.contains('trash-btn')) {
+            var tBody = tableData.getElementsByTagName('tbody')[0];
             if (confirm("Are you sure you want to delete this row?") == true) {
                 event.target.parentNode.parentNode.remove();
             }
         }
     }
 });
+

@@ -19,6 +19,8 @@ html {
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
+@-ms-viewport {
+  width: device-width; }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
@@ -318,7 +320,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 @-ms-viewport {
-  width:  device-width; }
+  width: device-width; }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
@@ -8017,6 +8019,11 @@ thead tr:first-child {
   height: 30px; }
 
 tbody tr {
+  height: 30px; }
+
+tbody tr:last-child {
+  font-weight: bolder;
+  background-color: #d2def1;
   height: 30px; }
 
 .table-actions form {
