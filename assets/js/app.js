@@ -1079,4 +1079,50 @@ function resetSelect() {
 }
 
 
-// 
+// Калькулятор с записью, сложением и умножением
+var calculator = {
+    read: function () {
+        this.first = +prompt("Insert first number");
+        this.second = +prompt("Insert second number");
+    },
+    sum: function () {
+        return (this.first + this.second);
+    },
+    mul: function () {
+        return (this.first * this.second);
+    }
+};
+
+
+// Конструктор калькулятора
+function Calculator() {
+    var methods = {
+        "-": function(a, b) {
+            return (a - b);
+        },
+        "+": function(a, b) {
+            return (a + b);
+        }
+    };
+    this.calculate = function (str) {
+        var split = str.split(" "),
+            a = +split[0],
+            b = +split[2],
+            operator = split[1];
+
+        if (!methods[operator] || isNaN(a) || isNaN(b)) {
+            return NaN;
+        }
+        return methods[operator](a, b);
+    };
+    this.addMethod = function (name, f) {
+        methods[name] = f;
+    };
+}
+var calc = new Calculator;
+
+calc.addMethod("*", function (a, b) {
+    return (a * b);
+});
+var result = calc.calculate("2 * 3");
+console.log( result );

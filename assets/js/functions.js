@@ -11,13 +11,12 @@ $(document).ready(function () {
     }
     else overlay.classList.remove('blur');
 
-    var removeBtnClick = function (event) {
+    removeBtn.onclick = function (event) {
         localStorage.setItem("alert", "disabled");
         container.classList.toggle("hidden");
         overlay.classList.remove('blur');
         overlay.classList.add('blur-out');
     };
-    removeBtn.onclick = removeBtnClick;
 
     // Переключаем видимость блоков
     var menu = document.getElementById('menu');
@@ -46,10 +45,10 @@ $(document).ready(function () {
     // 1. Заполняем из localStorage при загрузке
     window.onload = function loadData() {
 
-        var returnArr = JSON.parse(localStorage.getItem("newRowData"));
+        var returnArr = arr = JSON.parse(localStorage.getItem("newRowData"));
 
         for (var i = 0; i < returnArr.length; i++) {
-            var newRow = tableData.insertRow(1);
+            var newRow =  tableData.insertRow(1);
 
             for (var elem in returnArr[i]) {
                 var newCell = newRow.insertCell();
@@ -59,7 +58,7 @@ $(document).ready(function () {
             deleteCell.innerHTML = "<td><i class=\"fa fa-trash-o trash-btn\"></i></td>";
         }
     };
-
+// 2. Сохраняем-удаляем элементы.
     // 2. Сохраняем-удаляем элементы.
     tableActions.onclick = function () {
         if (event.target.classList.contains('add-btn')) {
@@ -78,13 +77,13 @@ $(document).ready(function () {
                     arr.push(obj);
                     localStorage.setItem("newRowData", JSON.stringify(arr));
 
-                        var newRow = tableData.insertRow(1);
-                        for (var elem in obj) {
-                            var newCell = newRow.insertCell();
-                            newCell.innerHTML = obj[elem];
-                        }
-                        var deleteCell = newRow.insertCell();
-                        deleteCell.innerHTML = "<td><i class=\"fa fa-trash-o trash-btn\"></i></td>";
+                    var newRow = tableData.insertRow(1);
+                    for (var elem in obj) {
+                        var newCell = newRow.insertCell();
+                        newCell.innerHTML = obj[elem];
+                    }
+                    var deleteCell = newRow.insertCell();
+                    deleteCell.innerHTML = "<td><i class=\"fa fa-trash-o trash-btn\"></i></td>";
 
                     containerTableInput.classList.toggle('hidden');
                 }

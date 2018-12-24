@@ -53,7 +53,7 @@ gulp.task("minifyCss", ["compileSass"], function() {
 gulp.task('watchFiles', function() {
   gulp.watch('assets/css/**/*.scss', ['compileSass']);
   gulp.watch('assets/js/*.js', ['concatScripts']);
-})
+});
 
 gulp.task('clean', function() {
   del(['dist', 'assets/css/main.css*', 'assets/js/vendor*.js*']);
