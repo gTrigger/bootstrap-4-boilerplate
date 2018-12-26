@@ -6,7 +6,10 @@
       <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/vendor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,21 +25,22 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1" />
-          <entry key="es6" value="1351" />
-          <entry key="html" value="3804" />
-          <entry key="js" value="13671" />
+          <entry key="es6" value="1535" />
+          <entry key="html" value="3904" />
+          <entry key="js" value="16155" />
           <entry key="scss" value="2562" />
-          <entry key="txt" value="293" />
+          <entry key="ts" value="66" />
+          <entry key="txt" value="316" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="3806" />
-          <entry key="JavaScript" value="13669" />
-          <entry key="PLAIN_TEXT" value="293" />
+          <entry key="HTML" value="3906" />
+          <entry key="JavaScript" value="16153" />
+          <entry key="PLAIN_TEXT" value="316" />
           <entry key="SCSS" value="2562" />
-          <entry key="Scratch" value="1351" />
+          <entry key="Scratch" value="1601" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -48,7 +52,7 @@
           <entry key="json" value="3" />
           <entry key="rnc" value="1" />
           <entry key="scss" value="4" />
-          <entry key="ts" value="6" />
+          <entry key="ts" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -59,7 +63,7 @@
           <entry key="JavaScript" value="14" />
           <entry key="RNG Compact" value="1" />
           <entry key="SCSS" value="4" />
-          <entry key="Scratch" value="2" />
+          <entry key="Scratch" value="3" />
           <entry key="TypeScript" value="6" />
         </counts>
       </usages-collector>
@@ -79,16 +83,15 @@
     <favorites_list name="bootstrap-4-boilerplate" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4945355">
+    <splitter split-orientation="horizontal" split-proportion="0.2989071">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="139" column="16" lean-forward="true" selection-start-line="139" selection-start-column="16" selection-end-line="139" selection-end-column="16" />
+                <state relative-caret-position="259">
+                  <caret line="147" column="49" lean-forward="true" selection-start-line="147" selection-start-column="49" selection-end-line="147" selection-end-column="49" />
                   <folding>
-                    <element signature="n#head#0;n#html#0;n#!!top" />
                     <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
                     <element signature="e#1691#1697#0" expanded="true" />
@@ -110,19 +113,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/package.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/css/main.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="335">
-                  <caret line="261" column="22" selection-start-line="261" selection-start-column="22" selection-end-line="261" selection-end-column="22" />
+                <state relative-caret-position="404">
+                  <caret line="153" column="123" selection-start-line="153" selection-start-column="123" selection-end-line="153" selection-end-column="123" />
                 </state>
               </provider>
             </entry>
@@ -130,8 +124,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/assets/js/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="388">
-                  <caret line="1093" column="2" selection-start-line="1093" selection-start-column="2" selection-end-line="1093" selection-end-column="2" />
+                <state relative-caret-position="478">
+                  <caret line="1127" column="22" selection-start-line="1127" selection-start-column="22" selection-end-line="1127" selection-end-column="22" />
                 </state>
               </provider>
             </entry>
@@ -139,8 +133,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.es6">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="663">
-                  <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+                <state relative-caret-position="345">
+                  <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -155,8 +149,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/js/functions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="348">
-                  <caret line="66" column="35" lean-forward="true" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
+                <state relative-caret-position="329">
+                  <caret line="88" column="81" lean-forward="true" selection-start-line="88" selection-start-column="81" selection-end-line="88" selection-end-column="81" />
                 </state>
               </provider>
             </entry>
@@ -164,8 +158,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/gulpfile.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="385">
-                  <caret line="55" column="3" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
+                <state relative-caret-position="-677">
+                  <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
                 </state>
               </provider>
             </entry>
@@ -207,10 +201,11 @@
         <option value="$PROJECT_DIR$/assets/js/array.methods.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.es6" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/assets/js/app.js" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.es6" />
         <option value="$PROJECT_DIR$/assets/css/main.scss" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1.es6" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.ts" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/js/functions.js" />
       </list>
@@ -249,10 +244,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="25" />
-    <option name="width" value="1085" />
-    <option name="height" value="1055" />
+    <option name="x" value="-151" />
+    <option name="y" value="56" />
+    <option name="width" value="1056" />
+    <option name="height" value="1021" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -299,7 +294,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="ECMAScript 6" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TypeScript&#10;ECMAScript 6" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -322,7 +317,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.scratch_1.es6">
+  <component name="RunManager" selected="Node.js.functions.js">
     <configuration name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/assets/js">
       <method v="2" />
     </configuration>
@@ -375,9 +370,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.functions.js" />
         <item itemvalue="Node.js.scratch_1.es6" />
         <item itemvalue="Node.js.app.js" />
-        <item itemvalue="Node.js.functions.js" />
         <item itemvalue="npm.test" />
         <item itemvalue="Node.js.scratch.es6" />
       </list>
@@ -471,11 +466,18 @@
       <option name="project" value="LOCAL" />
       <updated>1545653504006</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Nope, not finished the LocalStorage thingy.">
+      <created>1545662004578</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1545662004578</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198894000" />
+    <option name="totallyTimeSpent" value="245697000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -490,18 +492,18 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4935484" visible="true" weight="0.0" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49405405" visible="true" weight="0.0" />
       <window_info id="Structure" order="1" sideWeight="0.5064516" side_tool="true" weight="0.13169399" />
-      <window_info id="Gulp" order="2" sideWeight="0.50080776" side_tool="true" weight="0.34059098" />
-      <window_info id="npm" order="3" sideWeight="0.5102703" side_tool="true" weight="0.18961748" />
+      <window_info id="Gulp" order="2" sideWeight="0.5059459" side_tool="true" weight="0.3295082" />
+      <window_info id="npm" order="3" sideWeight="0.5059459" side_tool="true" visible="true" weight="0.0" />
       <window_info id="Favorites" order="4" sideWeight="0.5064516" side_tool="true" weight="0.13169399" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.49945354" weight="0.44972974" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50054646" side_tool="true" weight="0.32972974" />
+      <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.49945354" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5010929" side_tool="true" weight="0.23783784" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="5" sideWeight="0.49945354" weight="0.13621622" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49945354" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Terminal" order="5" sideWeight="0.49945354" weight="0.32972974" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.4989071" weight="0.27891892" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -569,7 +571,38 @@
     <MESSAGE value="Tried to make the LocalStorage thingy, but still failed." />
     <MESSAGE value="Tried to make the LocalStorage thingy, but still failed. Now i can add rows and delete it, but only once :D" />
     <MESSAGE value="Finished the LocalStorage thingy." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished the LocalStorage thingy." />
+    <MESSAGE value="Nope, not finished the LocalStorage thingy." />
+    <option name="LAST_COMMIT_MESSAGE" value="Nope, not finished the LocalStorage thingy." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.es6</url>
+          <line>19</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.es6</url>
+          <line>30</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.es6</url>
+          <line>31</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.es6</url>
+          <line>24</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es2017.string.d.ts">
@@ -633,54 +666,60 @@
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="153" column="123" selection-start-line="153" selection-start-column="123" selection-end-line="153" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="1127" column="22" selection-start-line="1127" selection-start-column="22" selection-end-line="1127" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="55" column="3" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
+        <state relative-caret-position="-677">
+          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.es6">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="345">
+          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="1093" column="2" selection-start-line="1093" selection-start-column="2" selection-end-line="1093" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="261" column="22" selection-start-line="261" selection-start-column="22" selection-end-line="261" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="66" column="35" lean-forward="true" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
+        <state relative-caret-position="329">
+          <caret line="88" column="81" lean-forward="true" selection-start-line="88" selection-start-column="81" selection-end-line="88" selection-end-column="81" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="139" column="16" lean-forward="true" selection-start-line="139" selection-start-column="16" selection-end-line="139" selection-end-column="16" />
+        <state relative-caret-position="259">
+          <caret line="147" column="49" lean-forward="true" selection-start-line="147" selection-start-column="49" selection-end-line="147" selection-end-column="49" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="e#1691#1697#0" expanded="true" />

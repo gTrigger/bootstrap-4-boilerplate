@@ -1,5 +1,7 @@
 // npm install <name.js> --save || --save-dev
 $(document).ready(function () {
+    'use strict';
+    let arr = [];
 
     // Блюрим фон и выдаем алерт с приветствием, по нажатию кнопки снимаем блюр и убираем алерт
     var container = document.getElementsByClassName('container-alert-box')[0];
@@ -11,13 +13,12 @@ $(document).ready(function () {
     }
     else overlay.classList.remove('blur');
 
-    var removeBtnClick = function (event) {
+    removeBtn.onclick = function (event) {
         localStorage.setItem("alert", "disabled");
         container.classList.toggle("hidden");
         overlay.classList.remove('blur');
         overlay.classList.add('blur-out');
     };
-    removeBtn.onclick = removeBtnClick;
 
     // Переключаем видимость блоков
     var menu = document.getElementById('menu');
@@ -41,22 +42,22 @@ $(document).ready(function () {
     var tableActions = document.getElementsByClassName('table-actions')[0];
     var containerTableInput = document.getElementsByClassName('container-table-input')[0];
     var tableData = document.getElementsByClassName('table-data')[0];
-    let arr = [];
+
 
     // 1. Заполняем из localStorage при загрузке
     window.onload = function loadData() {
 
-        var returnArr = arr = JSON.parse(localStorage.getItem("newRowData"));
 
+        let returnArr = arr = JSON.parse(localStorage.getItem("newRowData")) || [];
         for (var i = 0; i < returnArr.length; i++) {
             var newRow = tableData.insertRow(1);
-
-            for (var elem in returnArr[i]) {
-                var newCell = newRow.insertCell();
-                newCell.innerText = returnArr[i][elem];
-            }
-            var deleteCell = newRow.insertCell();
-            deleteCell.innerHTML = "<td><i class=\"fa fa-trash-o trash-btn\"></i></td>";
+            newRow.innerHTML =
+                "<td>" + returnArr[i].date + "</td>" +
+                "<td>" + returnArr[i].name + "</td>" +
+                "<td>" + returnArr[i].projectID + "</td>" +
+                "<td>" + returnArr[i].client + "</td>" +
+                "<td>" + returnArr[i].comment + "</td>" +
+                "<td><i class=\"fa fa-trash-o trash-btn\"></i></td>";
         }
     };
 
@@ -69,22 +70,25 @@ $(document).ready(function () {
                 if (event.target.classList.contains('fa-check')) {
                     var form = document.forms["table-input-box"];
                     var obj = {
-                        date: form.elements[0].value,
-                        name: form.elements[1].value,
-                        id: form.elements[2].value,
-                        client: form.elements[3].value,
-                        comment: form.elements[4].value
+                        date: form.elements.actionDate.value,
+                        name: form.elements.actionName.value,
+                        projectID: form.elements.actionProjectID.value,
+                        client: form.elements.actionClientName.value,
+                        comment: form.elements.actionComment.value,
+                        id: Math.round(Math.random()*10000)
                     };
                     arr.push(obj);
                     localStorage.setItem("newRowData", JSON.stringify(arr));
 
                     var newRow = tableData.insertRow(1);
-                    for (var elem in obj) {
-                        var newCell = newRow.insertCell();
-                        newCell.innerHTML = obj[elem];
-                    }
-                    var deleteCell = newRow.insertCell();
-                    deleteCell.innerHTML = "<td><i class=\"fa fa-trash-o trash-btn\"></i></td>";
+                    newRow.setAttribute("id", obj[id]);
+                    newRow.innerHTML =
+                        "<td>" + form.elements.actionDate.value + "</td>" +
+                        "<td>" + form.elements.actionName.value + "</td>" +
+                        "<td>" + form.elements.actionProjectID.value + "</td>" +
+                        "<td>" + form.elements.actionClientName.value + "</td>" +
+                        "<td>" + form.elements.actionComment.value + "</td>" +
+                        "<td><i class=\"fa fa-trash-o trash-btn\"></i></td>";
 
                     containerTableInput.classList.toggle('hidden');
                 }
@@ -95,13 +99,12 @@ $(document).ready(function () {
             }
         }
         else if (event.target.classList.contains('trash-btn')) {
-            if (confirm("Are you sure you want to delete entire table?") == true) {
+            if (confirm("Are you sure you want to delete entire table?") === true) {
                 var tBody = tableData.getElementsByTagName('tbody')[0];
 
                 localStorage.removeItem('newRowData');
 
-                while (tBody.childNodes.length > 2)
-                {
+                while (tBody.childNodes.length > 2) {
                     tBody.removeChild(tBody.firstChild);
                 }
             }
@@ -109,9 +112,22 @@ $(document).ready(function () {
     };
     tableData.onclick = function () {
         if (event.target.classList.contains('trash-btn')) {
-            var tBody = tableData.getElementsByTagName('tbody')[0];
-            if (confirm("Are you sure you want to delete this row?") == true) {
+            var rowToDeleteID = event.target.parentNode.parentNode.getAttribute('id');
+
+            if (confirm("Are you sure you want to delete this row?") === true) {
                 event.target.parentNode.parentNode.remove();
+
+                var storedActions = JSON.parse(localStorage.getItem("newRowData"));
+
+                /*Логика такая: если id не равен нужному, то записываем в массив.
+                Затем после проверки перезаписываем массив.*/
+
+                var filteredActions = storedActions.filter(function(rowData) {
+                    return rowData.id !== rowToDeleteID;
+                });
+
+                localStorage.removeItem('newRowData');
+                localStorage.setItem('newRowData', JSON.stringify(filteredActions));
             }
         }
     }
