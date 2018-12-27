@@ -130,9 +130,10 @@
         <div class="container-table grid-item hidden">
             <h1>LAST ACTIONS</h1>
             <div class="table-actions">
-                <form action="http://google.com/search" target="_blank">
-                    <input type="search" class="searchbox" placeholder="Search...">
+                <form>
                     <button class="fa fa-search"></button>
+                    <input type="search" class="searchbox" id="search-text" placeholder="Search..." onkeyup="tableSearch()">
+                    <button class="fa fa-close"></button>
                 </form>
                 <button class="fa fa-trash-o trash-btn"></button>
                 <button class="fa fa-plus add-btn"></button>

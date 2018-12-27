@@ -1,13 +1,21 @@
 // npm install <name.js> --save || --save-dev
+
+let arr = [];
+var menu = document.getElementById('menu');
+var descr = document.getElementsByClassName('container-descr')[0];
+var table = document.getElementsByClassName('container-table')[0];
+var graph = document.getElementsByClassName('container-graph')[0];
+var tableActions = document.getElementsByClassName('table-actions')[0];
+var containerTableInput = document.getElementsByClassName('container-table-input')[0];
+var tableData = document.getElementsByClassName('table-data')[0];
+var container = document.getElementsByClassName('container-alert-box')[0];
+var overlay = document.getElementById('overlay');
+var removeBtn = document.getElementsByClassName('remove-button')[0];
+
 $(document).ready(function () {
     'use strict';
-    let arr = [];
 
     // Блюрим фон и выдаем алерт с приветствием, по нажатию кнопки снимаем блюр и убираем алерт
-    var container = document.getElementsByClassName('container-alert-box')[0];
-    var overlay = document.getElementById('overlay');
-    var removeBtn = document.getElementsByClassName('remove-button')[0];
-
     if (!localStorage.getItem("alert")) {
         container.classList.toggle("hidden");
     }
@@ -21,10 +29,6 @@ $(document).ready(function () {
     };
 
     // Переключаем видимость блоков
-    var menu = document.getElementById('menu');
-    var descr = document.getElementsByClassName('container-descr')[0];
-    var table = document.getElementsByClassName('container-table')[0];
-    var graph = document.getElementsByClassName('container-graph')[0];
     menu.onclick = function (event) {
         if (event.target.classList.contains('show-profile-btn')) {
             descr.classList.toggle('hidden');
@@ -39,15 +43,8 @@ $(document).ready(function () {
     };
 
     // Работаем с таблицей
-    var tableActions = document.getElementsByClassName('table-actions')[0];
-    var containerTableInput = document.getElementsByClassName('container-table-input')[0];
-    var tableData = document.getElementsByClassName('table-data')[0];
-
-
     // 1. Заполняем из localStorage при загрузке
     window.onload = function loadData() {
-
-
         let returnArr = arr = JSON.parse(localStorage.getItem("newRowData")) || [];
         for (var i = 0; i < returnArr.length; i++) {
             var newRow = tableData.insertRow(1);
@@ -99,6 +96,7 @@ $(document).ready(function () {
                 }
             }
         }
+        //Удаляем всю таблицу и очищаем localStorage
         else if (event.target.classList.contains('trash-btn')) {
             if (confirm("Are you sure you want to delete entire table?") === true) {
                 var tBody = tableData.getElementsByTagName('tbody')[0];
@@ -111,6 +109,7 @@ $(document).ready(function () {
             }
         }
     };
+    //Удаляем строку из таблицы и из localStorage
     tableData.onclick = function () {
         if (event.target.classList.contains('trash-btn')) {
             var rowToDeleteID = event.target.parentNode.parentNode.getAttribute('id');
@@ -128,4 +127,28 @@ $(document).ready(function () {
         }
     }
 });
+//Поиск по таблице
+function tableSearch() {
+    var searchBox = document.getElementById('search-text');
+    tableRows = tableData.getElementsByTagName('tbody')[0].rows;
+    var searchPhrase = new RegExp(searchBox.value, 'i');
+    var flag = false;
+    console.log(searchPhrase);
+    for (var i = 0; i < tableRows.length; i++) {
+        flag = false;
+        for (var j = 0; j < tableRows[i].cells.length; j++) {
+
+            flag = searchPhrase.test(tableRows[i].cells[j].innerHTML);
+            console.log(flag);
+            if (flag) break;
+        }
+        if (flag) {
+            tableRows[i].style.display = "";
+        }
+        else {
+            tableRows[i].style.display = "none";
+        }
+    }
+}
+
 
