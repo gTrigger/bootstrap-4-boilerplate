@@ -13,7 +13,7 @@ $(document).ready(function () {
     }
     else overlay.classList.remove('blur');
 
-    removeBtn.onclick = function (event) {
+    removeBtn.onclick = function () {
         localStorage.setItem("alert", "disabled");
         container.classList.toggle("hidden");
         overlay.classList.remove('blur');
@@ -58,6 +58,7 @@ $(document).ready(function () {
                 "<td>" + returnArr[i].client + "</td>" +
                 "<td>" + returnArr[i].comment + "</td>" +
                 "<td><i class=\"fa fa-trash-o trash-btn\"></i></td>";
+            newRow.setAttribute("id", returnArr[i].id);
         }
     };
 
@@ -81,7 +82,6 @@ $(document).ready(function () {
                     localStorage.setItem("newRowData", JSON.stringify(arr));
 
                     var newRow = tableData.insertRow(1);
-                    newRow.setAttribute("id", obj[id]);
                     newRow.innerHTML =
                         "<td>" + form.elements.actionDate.value + "</td>" +
                         "<td>" + form.elements.actionName.value + "</td>" +
@@ -89,6 +89,7 @@ $(document).ready(function () {
                         "<td>" + form.elements.actionClientName.value + "</td>" +
                         "<td>" + form.elements.actionComment.value + "</td>" +
                         "<td><i class=\"fa fa-trash-o trash-btn\"></i></td>";
+                    newRow.setAttribute("id", obj.id);
 
                     containerTableInput.classList.toggle('hidden');
                 }
@@ -113,20 +114,15 @@ $(document).ready(function () {
     tableData.onclick = function () {
         if (event.target.classList.contains('trash-btn')) {
             var rowToDeleteID = event.target.parentNode.parentNode.getAttribute('id');
-
+            console.log(event.target.parentNode.parentNode.getAttribute('id'));
             if (confirm("Are you sure you want to delete this row?") === true) {
-                event.target.parentNode.parentNode.remove();
 
                 var storedActions = JSON.parse(localStorage.getItem("newRowData"));
-
-                /*Логика такая: если id не равен нужному, то записываем в массив.
-                Затем после проверки перезаписываем массив.*/
-
-                var filteredActions = storedActions.filter(function(rowData) {
-                    return rowData.id !== rowToDeleteID;
+                var filteredActions = storedActions.filter(function(storedActions) {
+                    return +storedActions.id !== +rowToDeleteID;
                 });
-
-                localStorage.removeItem('newRowData');
+                event.target.parentNode.parentNode.remove();
+                console.log(filteredActions);
                 localStorage.setItem('newRowData', JSON.stringify(filteredActions));
             }
         }
