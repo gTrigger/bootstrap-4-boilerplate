@@ -18,7 +18,7 @@ gulp.task("concatScripts", function() {
 		'assets/js/vendor/popper.min.js',
 		'assets/js/vendor/bootstrap.min.js',
         'assets/js/vendor/bootstrap-datepicker.js'
-		// 'assets/js/functions.js'
+		// 'assets/js/app.js'
 	])
 		.pipe(maps.init())
 		.pipe(concat('vendor.js'))

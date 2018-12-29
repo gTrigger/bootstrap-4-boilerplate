@@ -7871,11 +7871,9 @@ h1 {
 .remove-button {
   background: rgba(0, 0, 0, 0);
   color: white;
-  display: inline-block;
   border: 2px solid white;
   border-radius: 12px;
-  padding: 10px;
-  margin: 20px; }
+  padding: 10px; }
 
 /*Стили для descr*/
 .container-descr {
@@ -7893,7 +7891,7 @@ h1 {
   padding: 30px; }
 
 .profilepic {
-  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkwN_2wJvsxPFW5dE8qsWFZjN536Q5xIITOUTZoiDeoqiAMo8l") no-repeat;
+  background-image: url("../img/profile.jpg");
   background-size: 100% 100%;
   width: 240px;
   height: 240px;
@@ -8117,6 +8115,20 @@ tbody tr:last-child {
   display: inline-block;
   float: left;
   height: 35px; }
+
+.table-actions .search-icon-btn {
+  float: left;
+  margin-left: 0;
+  margin-right: 10px; }
+
+.table-actions .search-cancel-btn {
+  margin-left: -400px;
+  margin-top: 1px;
+  color: rgba(0, 86, 70, 0.69); }
+
+.container-actions {
+  margin-top: -30px;
+  margin-bottom: 15px; }
 
 /*Стили для нижних кнопок*/
 .bottom-btn {

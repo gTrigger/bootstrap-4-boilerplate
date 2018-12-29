@@ -7,16 +7,20 @@
 <body>
 <!--Приветственное сообщение-->
 <div class="container-alert-box hidden">
-    <div class="alert-box">
-        <h1>Welcome!</h1>
-        <p>I'm so happy to see you here! </p>
-        <p class="justify-text">You can turn on some widgets, just try to click on PROFILE, LAST ACTIONS and ACTIVITY buttons
-            from the side menu. Hope you'll like it! ( ͡° ͜ʖ ͡°)</p>
-        <button type="button" class="remove-button">Ok, thanks, close it now, please</button>
+    <div class="alert-box modal-open">
+        <h1 class="modal-header">Welcome!</h1>
+        <div class="modal-body">
+            <p>I'm so happy to see you here! </p>
+            <p class="justify-text">You can try on some widgets, just click on buttons
+                from the side menu. Hope you'll like it! ( ͡° ͜ʖ ͡°)</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="remove-button">Ok, thanks, close it now, please</button>
+        </div>
     </div>
 </div>
 
-<div id="overlay" class="blur">
+<div id="overlay"><!-- class="blur"-->
     <!--Котик в углу экрана-->
     <div id="welcome-cat" class="not-hidden">
         <img src="https://cdn170.picsart.com/upscale-246067230013212.png?r1024x1024" width="400px">
@@ -122,21 +126,25 @@
                 <input type="text" name="actionComment" class="comment">
             </label>
             <br>
-            <button type="button" class="fa fa-check"></button>
-            <button type="button" class="fa fa-close"></button>
+            <button type="button" class="fa fa-check form-check-btn"></button>
+            <button type="button" class="fa fa-close form-cancel-btn"></button>
         </form>
     </div>
     <!--Контейнер для таблицы-->
         <div class="container-table grid-item hidden">
             <h1>LAST ACTIONS</h1>
             <div class="table-actions">
-                <form>
-                    <button class="fa fa-search"></button>
-                    <input type="search" class="searchbox" id="search-text" placeholder="Search..." onkeyup="tableSearch()">
-                    <button class="fa fa-close"></button>
-                </form>
-                <button class="fa fa-trash-o trash-btn"></button>
-                <button class="fa fa-plus add-btn"></button>
+                <div class="container-searchbox">
+                    <form>
+                        <button type="button" class="fa fa-search search-icon-btn" disabled></button>
+                        <input type="search" class="searchbox" id="table-searchbox" placeholder="Search..." onkeyup="tableSearch()">
+                        <button type="button" class="fa fa-close search-cancel-btn" onclick="clearSearchbox()"></button>
+                    </form>
+                </div>
+                <div class="container-actions">
+                    <button class="fa fa-trash-o table-trash-btn"></button>
+                    <button class="fa fa-plus table-add-btn"></button>
+                </div>
             </div>
             <br>
             <table align="center" class="table-data">
@@ -153,7 +161,7 @@
                 </thead>
 
                 <tbody>
-                <tr class="data-row">
+                <tr class="data-row" style="display: none">
                     <td class="column1">Date</td>
                     <td class="column2">Action Name</td>
                     <td class="column3">Project identifier</td>
@@ -175,7 +183,7 @@
 </div>
 </body>
 <script src="assets/js/vendor.js"></script>
-<script src="assets/js/functions.js"></script>
 <script src="assets/js/array.methods.js"></script>
+<script src="assets/js/app.js"></script>
 <!--<script src="assets/js/app.js"></script>-->
 </html>
