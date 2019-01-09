@@ -6,13 +6,13 @@
 </head>
 <body>
 <!--Приветственное сообщение-->
-<div class="container-alert-box hidden">
+<div class="container-welcome-alert-box hidden">
     <div class="alert-box modal-open">
         <h1 class="modal-header">Welcome!</h1>
         <div class="modal-body">
             <p>I'm so happy to see you here! </p>
-            <p class="justify-text">You can try on some widgets, just click on buttons
-                from the side menu. Hope you'll like it! ( ͡° ͜ʖ ͡°)</p>
+            <p class="alert-box-text">You can try on some widgets, just click on buttons
+                from the side menu. Hope you'll like it!</p>
         </div>
         <div class="modal-footer">
             <button type="button" class="remove-button">Ok, thanks, close it now, please</button>
@@ -20,14 +20,27 @@
     </div>
 </div>
 
-<div id="overlay"><!-- class="blur"-->
+<div class="container-confirm-alert-box hidden" id="confirmModal">
+    <div class="alert-box modal-open">
+        <h1 class="modal-header">Attention!</h1>
+        <div class="modal-body">
+            <p class="alert-box-text">Are you sure you want to delete the whole row?</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="remove-button" onclick="hideAlertBox()">No</button>
+            <button type="button" class="remove-button" onclick="deleteRow()">Yes</button>
+        </div>
+    </div>
+</div>
+
+<div class="overlay"><!-- class="blur"-->
     <!--Котик в углу экрана-->
     <div id="welcome-cat" class="not-hidden">
         <img src="https://cdn170.picsart.com/upscale-246067230013212.png?r1024x1024" width="400px">
     </div>
 
     <div class="wrapper">
-    <!--Контейнер для меню-->
+        <!--Контейнер для меню-->
         <div class="container-menu grid-item" id="menu">
             <img src="https://www.logogarden.com/wp-content/uploads/lg-logo-samples/Decor-Furniture-Logo-8.png"
                  alt="Logo" class="logo">
@@ -59,7 +72,7 @@
                 </li>
             </ul>
         </div>
-    <!--Контейнер для общей информации-->
+        <!--Контейнер для общей информации-->
         <div class="container-descr grid-item hidden">
             <div class="profile">
                 <div class="profilepic">
@@ -86,51 +99,47 @@
                         <a href="http://github.com"><i class="fa fa-2x fa-github-square pulse"> </i></a>
                         <a href="http://tumblr.com"><i class="fa fa-2x fa-tumblr-square pulse"> </i></a>
                     </div>
-            </div>
+                </div>
             </div>
         </div>
-    <!--Контейнер для графика-->
+        <!--Контейнер для графика-->
         <div class="container-graph grid-item hidden">
             <h1>LAST 30 DAYS ACTIVITY</h1>
             <br>
             <img src="assets/img/graph.png" class="graph">
         </div>
-    <!--Контейнер для бокса для заполнения таблицы-->
-    <div class="container-table-input hidden">
-        <form class="table-input-box" name="table-input-box">
-            <h1>NEW ACTION</h1>
-            <label>
-                Date
-                <br>
-                <input type="date" id="datepicker" name="actionDate">
-            </label>
-            <br>
-            <label>
-                Action name
-                <input type="text" name="actionName">
-            </label>
-            <br>
-            <label>
-                Project identifier
-                <input type="text" name="actionProjectID">
-            </label>
-            <br>
-            <label>
-                Client name
-                <input type="text" name="actionClientName">
-            </label>
-            <br>
-            <label>
-                Comment
-                <br>
-                <input type="text" name="actionComment" class="comment">
-            </label>
-            <br>
-            <button type="button" class="fa fa-check form-check-btn"></button>
-            <button type="button" class="fa fa-close form-cancel-btn"></button>
-        </form>
-    </div>
-    <!--Контейнер для таблицы-->
+        <!--Контейнер для бокса для заполнения таблицы-->
+        <div class="container-table-input hidden">
+            <form class="table-input-box" name="table-input-box">
+                <h1>NEW ACTION</h1>
+                <div class="input-group date" data-provide="datepicker">
+                    <input type="text" class="form-control" name="actionDate">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-th"></span>
+                    </div>
+                </div>
+                <div>
+                    Action name
+                    <input type="text" name="actionName">
+                </div>
+                <div>
+                    Project identifier
+                    <input type="text" name="actionProjectID">
+                </div>
+                <div>
+                    Client name
+                    <input type="text" name="actionClientName">
+                </div>
+                <div>
+                    Comment
+                    <br>
+                    <input type="text" name="actionComment" class="comment">
+                </div>
+                <button type="button" class="fa fa-check form-check-btn"></button>
+                <button type="button" class="fa fa-close form-cancel-btn"></button>
+            </form>
+        </div>
+        <!--Контейнер для таблицы-->
         <div class="container-table grid-item hidden">
             <h1>LAST ACTIONS</h1>
             <div class="table-actions">
@@ -142,7 +151,7 @@
                     </form>
                 </div>
                 <div class="container-actions">
-                    <button class="fa fa-trash-o table-trash-btn"></button>
+                    <button class="fa fa-trash-o table-trash-btn" onclick=""></button>
                     <button class="fa fa-plus table-add-btn"></button>
                 </div>
             </div>
@@ -185,5 +194,4 @@
 <script src="assets/js/vendor.js"></script>
 <script src="assets/js/array.methods.js"></script>
 <script src="assets/js/app.js"></script>
-<!--<script src="assets/js/app.js"></script>-->
 </html>

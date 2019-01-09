@@ -52,9 +52,11 @@ h1 {
   font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
   font-size: 24px;
 }
+
 .hidden {
   visibility: hidden;
 }
+
 #welcome-cat {
   position: absolute;
   bottom: 20px;
@@ -68,6 +70,7 @@ h1 {
   justify-items: start;
   background: rgba(0, 0, 0, 0.4);
   position: fixed;
+  top: 0;
   width: 15%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 10px 20px rgba(0, 0, 0, 0.3);
 }
@@ -105,7 +108,7 @@ h1 {
   border: 2px solid #b8c0f1;
 }
 /*Стили для alertbox*/
-.container-alert-box {
+.container-welcome-alert-box, .container-confirm-alert-box {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -117,6 +120,9 @@ h1 {
   overflow: auto;
   background: linear-gradient(to top, #127361 0%, #22084b 100%);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.modal-header, .modal-footer {
+  justify-content: center;
 }
 .alert-box {
   padding: 20px;
@@ -330,26 +336,6 @@ tbody tr:last-child {
 .table-actions button:active .table-input-box button:active {
   color: #b8c0f1;
 }
-/*Стили для выбора дат*/
-.container-select {
-  white-space: nowrap;
-}
-
-.select {
-  display: inline-block;
-  border: 0;
-  outline: 0;
-  overflow: hidden;
-  border-radius: 3px;
-  background: rgba(0, 0, 0, 0);
-  color: white;
-  cursor: pointer;
-}
-
-.select p {
-  display: inline-block;
-}
-
 /*Стили для поиска*/
 .searchbox {
   display: inline-block;
