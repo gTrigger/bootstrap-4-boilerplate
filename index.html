@@ -6,7 +6,7 @@
 </head>
 <body>
 <!--Приветственное сообщение-->
-<div class="container-welcome-alert-box hidden">
+<div class="container-welcome-alert-box hidden" id="welcomeModal" role="dialog">
     <div class="alert-box modal-open">
         <h1 class="modal-header">Welcome!</h1>
         <div class="modal-body">
@@ -15,23 +15,26 @@
                 from the side menu. Hope you'll like it!</p>
         </div>
         <div class="modal-footer">
-            <button type="button" class="remove-button">Ok, thanks, close it now, please</button>
+            <button type="button" class="btn">Ok, thanks, close it now, please</button>
         </div>
     </div>
 </div>
 
-<div class="container-confirm-alert-box hidden" id="confirmModal">
+<div class="container-confirm-alert-box hidden" id="confirmModal" role="dialog">
+</div>
+
+<!--<div class="container-confirm-alert-box hidden" id="confirmModal" role="dialog">
     <div class="alert-box modal-open">
         <h1 class="modal-header">Attention!</h1>
         <div class="modal-body">
             <p class="alert-box-text">Are you sure you want to delete the whole row?</p>
         </div>
         <div class="modal-footer">
-            <button type="button" class="remove-button" onclick="hideAlertBox()">No</button>
-            <button type="button" class="remove-button" onclick="deleteRow()">Yes</button>
+            <button type="button" class="btn" onclick="toggleContainer(containerConfirmAlertBox)">No</button>
+            <button type="button" class="btn" onclick="deleteRow()">Yes</button>
         </div>
     </div>
-</div>
+</div>-->
 
 <div class="overlay"><!-- class="blur"-->
     <!--Котик в углу экрана-->
@@ -45,9 +48,9 @@
             <img src="https://www.logogarden.com/wp-content/uploads/lg-logo-samples/Decor-Furniture-Logo-8.png"
                  alt="Logo" class="logo">
             <div class="container-widget">
-                <button class="fa fa-user show-widget show-profile-btn active-btn"></button>
-                <button class="fa fa-calendar menu-item-label show-widget show-graph-btn"></button>
-                <button class="fa fa-tasks show-widget show-table-btn"></button>
+                <button class="fa fa-user show-widget show-profile-btn active-btn" onclick="toggle(document.getElementById('descr'))"></button>
+                <button class="fa fa-calendar menu-item-label show-widget show-graph-btn" onclick="toggle(document.getElementById('graph'))"></button>
+                <button class="fa fa-tasks show-widget show-table-btn" onclick="toggleTable()"></button>
             </div>
             <ul class="menu">
                 <li class="menu-btn">
@@ -73,7 +76,7 @@
             </ul>
         </div>
         <!--Контейнер для общей информации-->
-        <div class="container-descr grid-item hidden">
+        <div class="container-descr grid-item hidden" id="descr">
             <div class="profile">
                 <div class="profilepic">
                 </div>
@@ -103,13 +106,13 @@
             </div>
         </div>
         <!--Контейнер для графика-->
-        <div class="container-graph grid-item hidden">
+        <div class="container-graph grid-item hidden" id="graph">
             <h1>LAST 30 DAYS ACTIVITY</h1>
             <br>
             <img src="assets/img/graph.png" class="graph">
         </div>
         <!--Контейнер для бокса для заполнения таблицы-->
-        <div class="container-table-input hidden">
+        <div class="container-table-input hidden" id="table-input">
             <form class="table-input-box" name="table-input-box">
                 <h1>NEW ACTION</h1>
                 <div>
@@ -138,14 +141,14 @@
                     <br>
                     <input type="text" name="actionComment" class="comment">
                 </div>
-                <button type="button" class="fa fa-check form-check-btn"></button>
-                <button type="button" class="fa fa-close form-cancel-btn"></button>
+                <button type="button" class="fa fa-check form-check-btn" onclick="addNewRow()"></button>
+                <button type="button" class="fa fa-close form-cancel-btn" onclick="toggle(containerTableInput);"></button>
             </form>
         </div>
         <!--Контейнер для таблицы-->
-        <div class="container-table grid-item hidden">
+        <div class="container-table grid-item hidden" id="table">
             <h1>LAST ACTIONS</h1>
-            <div class="table-actions">
+            <div class="table-actions" id="table-actions">
                 <div class="container-searchbox">
                     <form>
                         <button type="button" class="fa fa-search search-icon-btn" disabled></button>
@@ -154,8 +157,8 @@
                     </form>
                 </div>
                 <div class="container-actions">
-                    <button class="fa fa-trash-o table-trash-btn" onclick=""></button>
-                    <button class="fa fa-plus table-add-btn"></button>
+                    <button class="fa fa-trash-o table-trash-btn" onclick="makeModal('table','toggleContainer(containerConfirmAlertBox)','deleteEntireTable()')"></button>
+                    <button class="fa fa-plus table-add-btn" onclick="toggle(containerTableInput)"></button>
                 </div>
             </div>
             <br>
