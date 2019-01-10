@@ -12,11 +12,13 @@ var tableData = document.getElementsByClassName('table-data')[0];
 var containerWelcomeAlertBox = document.getElementsByClassName('container-welcome-alert-box')[0];
 var containerConfirmAlertBox = document.getElementsByClassName('container-confirm-alert-box')[0];
 var closeAlertBtn = document.getElementsByClassName('remove-button')[0];
+var rowID;
 
 
 $(function () {
     $('.datepicker').datepicker( {
         format: 'dd/mm/yyyy',
+        autoclose: true
     })
 });
 
@@ -132,7 +134,7 @@ function fillTableWithRows(date, name, projectID, client, comment, id) {
         "<td>" + projectID + "</td>" +
         "<td>" + client + "</td>" +
         "<td>" + comment + "</td>" +
-        "<td><i class=\"fa fa-trash-o row-trash-btn\"></i></td>";
+        "<td><i class=\"fa fa-trash-o row-trash-btn\" onclick='returnRowToDeleteID()'></i></td>";
     newRow.setAttribute("id", id);
 }
 // Удаляем данные в таблице и в хранилище
@@ -149,17 +151,15 @@ function clearTable() {
     }
 }
 
-tableData.onclick = function () {
-    if (event.target.classList.contains('row-trash-btn')) {
-        containerConfirmAlertBox.classList.toggle("hidden");
-        var targetRowID = event.target.parentNode.parentNode.getAttribute('id');
-    }
-};
+function returnRowToDeleteID() {
+    containerConfirmAlertBox.classList.toggle("hidden");
+    rowID = event.target.parentNode.parentNode.getAttribute('id');
+}
+
 //Удаляем строку таблицы
 function deleteRow() {
     var storedActions = JSON.parse(localStorage.getItem("newRowData"));
     var filteredActions = storedActions.filter(function(storedActions) {
-        console.log(rowID);
         return +storedActions.id !== +rowID;
     });
     localStorage.setItem('newRowData', JSON.stringify(filteredActions));
